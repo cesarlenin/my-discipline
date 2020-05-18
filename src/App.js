@@ -1,34 +1,48 @@
 import React, { Component } from 'react'
-import { Route, Switch, Link } from 'react-router-dom'
+import { Route, Switch} from 'react-router-dom'
 import NotFound from './pages/NotFound';
 import LandingPage from './pages/LandingPage';
 import HomePage from './pages/HomePage';
+import CreateHabitPage from './pages/CreateHabitPage';
 import Nav from './components/Nav/Nav';
+import UserContext from './components/UserContext';
+import STORE from './dummy-store';
 import './App.css'
 
 class App extends Component {
   state = {
-
+    habits: STORE.habits,
+    actions: STORE.actions,
   }
 
   render() {
     return (
+      <UserContext.Provider
+      value={{
+        habits: this.state.habits,
+        actions: this.state.actions,
+      }}
+    >
       <div>
-      <header className='App__header'>
       <Nav/>
-      </header>
       <main className='App__main'>
         <Switch>
           <Route exact path="/" component={LandingPage} />
           <Route exact path="/Home" component={HomePage}/>
-          {/* <Route exact path="/Detail/:habitId" component={DetailPage} />
           <Route exact path="/createHabit" component={CreateHabitPage} />
+          {/* <Route exact path="/AddAction/" component={AddActionPage} /> */}
+          {/* <Route exact path="/EditHabit/" component={EditHabitPage} /> */}
+          {/* <Route exact path="/Detail/" component={DetailPage} /> */}
+          {/* <Route exact path="/AddAction/:habitId" component={AddActionPage} />
           <Route exact path="/EditHabit/:habitId" component={EditHabitPage} />
-          <Route exact path="/AddAction/:habitId" component={AddActionPage} /> */}
+          <Route exact path="/Detail/:habitId" component={DetailPage} /> */}
+
+
           <Route component={NotFound} />
         </Switch>
       </main>
     </div>
+    </UserContext.Provider>
     )
   }
 }
