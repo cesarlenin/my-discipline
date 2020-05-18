@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Route, Switch, Link } from 'react-router-dom'
 import NotFound from './pages/NotFound';
 import LandingPage from './pages/LandingPage';
-import Nav from './components/Nav';
+import Nav from './components/Nav/Nav';
 import './App.css'
 
 class App extends Component {

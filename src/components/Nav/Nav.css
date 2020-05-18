@@ -1,0 +1,21 @@
+.Header {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+.Header h1 {
+    margin: 0;
+  }
+
+.Header a {
+    color: #444;
+    text-decoration: none;
+  }
+
+.links{
+    margin: 5px;
+    padding: 5px;
+}
+
