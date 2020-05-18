@@ -9,7 +9,6 @@ export class DetailPage extends Component {
     const shownHabit = habits.find(
       (habit) => habit.id === this.props.match.params.habitId
     );
-    console.log(shownHabit);
     return (
         <main>
           <header>

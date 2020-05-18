@@ -1,21 +1,21 @@
 import React, { Component } from 'react'
-import { Link} from 'react-router-dom'
-import HabitForm from '../components/HabitForm';
+import EditHabitForm from '../components/EditHabitForm';
+import UserContext from '../components/UserContext'
 
 export class EditHabitPage extends Component {
+  static contextType = UserContext;
   render() {
+    const { habits } = this.context;
+    const shownHabit = habits.find(
+      (habit) => habit.id === this.props.match.params.habitId
+    );
     return (
       <main>
       <header>
         <h1>Edit Habit</h1>
       </header>
       <section>
-        <form className='habit-form'>
-          <HabitForm/>
-            <Link to='/Home'>
-            Submit
-            </Link>
-        </form>
+          <EditHabitForm habit={shownHabit} />
       </section>
     </main>
     )
