@@ -11,7 +11,7 @@ export class Nav extends Component {
             MY DISCIPLINE
           </Link>
       </h2>
-      <section className='links'>
+      <section className='Navlinks'>
         <Link
           to='/Home'>
           Home

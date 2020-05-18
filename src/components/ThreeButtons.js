@@ -1,17 +1,17 @@
 import React, { Component } from 'react'
-import { Link} from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
 
 export class ThreeButtons extends Component {
   render() {
     return ( 
         <div>
-        <Link to='/EditHabit'>
+        <NavLink className="link" to={`/EditHabit/${this.props.id}`}>
           edit
-        </Link>
+        </NavLink>
         <button>Delete</button>
-        <Link to='/AddAction'>
+        <NavLink className="link" to={`/AddAction/${this.props.id}`}>
         Add Action
-        </Link>
+        </NavLink>
       </div>
 
     )

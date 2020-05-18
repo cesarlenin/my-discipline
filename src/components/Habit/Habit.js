@@ -1,15 +1,21 @@
 import React, { Component } from 'react'
+import { NavLink } from 'react-router-dom';
 import ThreeButtons from '../ThreeButtons';
 
 export class Habit extends Component {
   render() {
+    
     return ( 
-        <section className= "habit">
+        <section>
         <header>
-            <h2>Read a book</h2>
+        <NavLink className="links" to={`/Detail/${this.props.id}`}>
+        <h2>{this.props.name}</h2>
+        </NavLink>
         </header>
         <p>7 day calendar goes here</p>
-        <ThreeButtons/>
+        <div className= "habit">
+        <ThreeButtons id={this.props.id}/>
+        </div>
       </section>
 
     )

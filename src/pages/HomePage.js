@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link} from 'react-router-dom'
-import Habit from '../components/Habit/Habit';
+import HabitList from '../components/HabitList';
 
 export class HomePage extends Component {
   render() {
@@ -15,7 +15,8 @@ export class HomePage extends Component {
       create habit
       </Link>
       </section>
-      <Habit/>
+
+      <HabitList/>
     </main>
     )
   }

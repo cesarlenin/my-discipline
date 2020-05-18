@@ -58,4 +58,13 @@
     border-left: 1px solid #CCCCCC;
   }
 
+  .links{
+    display: block;
+    width: 100%;
+    border: none;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
  
