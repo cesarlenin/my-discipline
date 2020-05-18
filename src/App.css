@@ -46,7 +46,7 @@
     margin-top: 15px;
   }
   
-  .aButton a,  .signup-form a, .add-action-form a, .habit a{
+  .aButton a,  .habit-form a, .add-action-form a, .habit a{
     font: bold 11px Arial;
     text-decoration: none;
     background-color: #EEEEEE;

@@ -2,24 +2,24 @@ import React, { Component } from 'react'
 import { Link} from 'react-router-dom'
 import HabitForm from '../components/HabitForm';
 
-export class CreateHabitPage extends Component {
+export class EditHabitPage extends Component {
   render() {
     return (
-    <main>
-      <header >
-        <h1>Create Habit</h1>
+      <main>
+      <header>
+        <h1>Edit Habit</h1>
       </header>
-        <section>
+      <section>
         <form className='habit-form'>
-            <HabitForm/>
+          <HabitForm/>
             <Link to='/Home'>
             Submit
             </Link>
         </form>
       </section>
-      </main>
+    </main>
     )
   }
 }
 
-export default CreateHabitPage
+export default EditHabitPage

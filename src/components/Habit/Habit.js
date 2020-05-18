@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link} from 'react-router-dom'
+import ThreeButtons from '../ThreeButtons';
 
 export class Habit extends Component {
   render() {
@@ -9,11 +9,7 @@ export class Habit extends Component {
             <h2>Read a book</h2>
         </header>
         <p>7 day calendar goes here</p>
-        <button>Edit</button>{/* button turn to link */}
-        <button>Delete</button>{/* button turn to link */}
-        <Link to='/AddAction'>
-        Add Action
-        </Link>
+        <ThreeButtons/>
       </section>
 
     )

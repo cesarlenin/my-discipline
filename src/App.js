@@ -5,6 +5,8 @@ import LandingPage from './pages/LandingPage';
 import HomePage from './pages/HomePage';
 import CreateHabitPage from './pages/CreateHabitPage';
 import AddActionPage from './pages/AddActionPage';
+import EditHabitPage from './pages/EditHabitPage';
+import DetailPage from './pages/DetailPage';
 import Nav from './components/Nav/Nav';
 import UserContext from './components/UserContext';
 import STORE from './dummy-store';
@@ -32,8 +34,8 @@ class App extends Component {
           <Route exact path="/Home" component={HomePage}/>
           <Route exact path="/createHabit" component={CreateHabitPage} />
           <Route exact path="/AddAction/" component={AddActionPage} />
-          {/* <Route exact path="/EditHabit/" component={EditHabitPage} /> */}
-          {/* <Route exact path="/Detail/" component={DetailPage} /> */}
+          <Route exact path="/EditHabit/" component={EditHabitPage} />
+          <Route exact path="/Detail/" component={DetailPage} />
           {/* <Route exact path="/AddAction/:habitId" component={AddActionPage} />
           <Route exact path="/EditHabit/:habitId" component={EditHabitPage} />
           <Route exact path="/Detail/:habitId" component={DetailPage} /> */}
