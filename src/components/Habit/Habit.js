@@ -13,7 +13,7 @@ export class Habit extends Component {
         <h2>{this.props.name}</h2>
         </NavLink>
         </header>
-        <WeekCalendar/>
+        <WeekCalendar id={this.props.id}/>
         <div className= "habit">
         <ThreeButtons id={this.props.id}/>
         </div>

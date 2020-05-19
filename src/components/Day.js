@@ -11,9 +11,9 @@ export class Day extends Component {
     weekday[4] = "Thursday";
     weekday[5] = "Friday";
     weekday[6] = "Saturday";
-    
+
     return ( 
-        <div>
+        <div className='day'>
           {weekday[this.props.day.getDay()]}
           <br/>
           {this.props.day.getDate()}
