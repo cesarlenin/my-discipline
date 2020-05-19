@@ -33,12 +33,12 @@ class App extends Component {
       <main className='App__main'>
         <Switch>
           <Route exact path="/" component={LandingPage} />
-          <Route exact path="/Home" component={HomePage}/>
-          <Route exact path="/createHabit" component={CreateHabitPage} />
-          <Route exact path="/AddAction/:habitId" component={AddActionPage} />
-          <Route exact path="/EditHabit/:habitId" component={EditHabitPage} />
-          <Route exact path="/Detail/:habitId" component={DetailPage} />
-          <Route component={NotFound} />
+          <PrivateRoute exact path="/Home" component={HomePage}/>
+          <PrivateRoute exact path="/createHabit" component={CreateHabitPage} />
+          <PrivateRoute exact path="/AddAction/:habitId" component={AddActionPage} />
+          <PrivateRoute exact path="/EditHabit/:habitId" component={EditHabitPage} />
+          <PrivateRoute exact path="/Detail/:habitId" component={DetailPage} />
+          <PublicOnlyRoute component={NotFound} />
         </Switch>
       </main>
     </div>
