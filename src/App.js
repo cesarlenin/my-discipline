@@ -8,6 +8,8 @@ import AddActionPage from './pages/AddActionPage';
 import EditHabitPage from './pages/EditHabitPage';
 import DetailPage from './pages/DetailPage';
 import Nav from './components/Nav/Nav';
+import PrivateRoute from './components/Utils/PrivateRoute'
+import PublicOnlyRoute from './components/Utils/PublicOnlyRoute'
 import UserContext from './components/UserContext';
 import STORE from './dummy-store';
 import './App.css'
