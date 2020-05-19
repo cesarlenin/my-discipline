@@ -1,21 +1,25 @@
-import React, { Component } from 'react'
+import React, { Component} from 'react'
 import ThreeButtons from '../components/ThreeButtons';
 import UserContext from '../components/UserContext'
+import Calendar from 'react-calendar';
 
 export class DetailPage extends Component {
   static contextType = UserContext;
+
+
   render() {
     const { habits } = this.context;
     const shownHabit = habits.find(
       (habit) => habit.id === this.props.match.params.habitId
     );
+
     return (
         <main>
           <header>
             <h2>{shownHabit.name}</h2>
           </header>
           <section>
-          <p>month calendar goes here</p>
+          <Calendar/>
           </section>
         <section>
               <h3>description</h3>

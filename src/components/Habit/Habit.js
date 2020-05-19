@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom';
 import ThreeButtons from '../ThreeButtons';
+import WeekCalendar from '../WeekCalendar';
 
 export class Habit extends Component {
   render() {
@@ -12,7 +13,7 @@ export class Habit extends Component {
         <h2>{this.props.name}</h2>
         </NavLink>
         </header>
-        <p>7 day calendar goes here</p>
+        <WeekCalendar/>
         <div className= "habit">
         <ThreeButtons id={this.props.id}/>
         </div>

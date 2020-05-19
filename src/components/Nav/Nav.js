@@ -1,21 +1,19 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './Nav.css'
 
 export class Nav extends Component {
   render() {
     return (
     <nav className='Header'>
-      <h2>
-          <Link to='/'>
-            MY DISCIPLINE
-          </Link>
-      </h2>
+      
+          <NavLink to='/'>
+          <h2>MY DISCIPLINE</h2>
+          </NavLink>
       <section className='Navlinks'>
-        <Link
-          to='/Home'>
+        <NavLink to='/Home'>
           Home
-        </Link>
+        </NavLink>
       </section>
     </nav>
     )
