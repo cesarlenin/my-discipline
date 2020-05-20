@@ -8,7 +8,7 @@ export class HabitList extends Component {
     const {habits} = this.context;
     const habitsList = habits.map(habit => {
 
-     return <Habit key={habit.id} id={habit.id} name={habit.name}/>
+     return <Habit key={habit.id} id={habit.id} name={habit.habit_name}/>
    })
     
     return ( 
