@@ -65,6 +65,12 @@ export class UserContextProvider extends Component {
     ])
   }
 
+  addAction = actions => {
+    this.setActions([
+      ...this.state.actions,
+      actions
+    ])
+  }
 
     render() {
       const value = {

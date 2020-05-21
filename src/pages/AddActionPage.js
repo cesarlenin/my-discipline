@@ -9,7 +9,7 @@ export class AddActionPage extends Component {
 			<h1>Add action</h1>
 		</header>
         <section>
-            <ActionForm/>
+            <ActionForm {...this.props}/>
       </section>
     </main>
     )

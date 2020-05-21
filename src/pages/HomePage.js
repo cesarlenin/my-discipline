@@ -8,15 +8,17 @@ export class HomePage extends Component {
   static contextType = UserContext;
 
   componentDidMount() {
-    this.context.clearError()
-    HabitsApiService.getHabits()
-    .then(data=>this.context.setHabits(data))
-    .catch(error=>this.context.setError(error))
-
-    this.context.clearError()
-    HabitsApiService.getActions()
-    .then(data=>this.context.setActions(data))
-    .catch(error=>this.context.setError(error))
+    if(this.context.authToken){
+      this.context.clearError()
+      HabitsApiService.getHabits()
+      .then(data=>this.context.setHabits(data))
+      .catch(error=>this.context.setError(error))
+  
+      this.context.clearError()
+      HabitsApiService.getActions()
+      .then(data=>this.context.setActions(data))
+      .catch(error=>this.context.setError(error))
+    }
   }
 
 

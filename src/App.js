@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Switch} from 'react-router-dom'
+import {Switch, BrowserRouter} from 'react-router-dom'
 import NotFound from './pages/NotFound';
 import LandingPage from './pages/LandingPage';
 import HomePage from './pages/HomePage';
@@ -17,6 +17,7 @@ class App extends Component {
   render() {
     return (
       <UserContextProvider>
+      <BrowserRouter>
       <Nav/>
       <main className='App__main'>
         <Switch>
@@ -29,6 +30,7 @@ class App extends Component {
           <PublicOnlyRoute component={NotFound} />
         </Switch>
       </main>
+      </BrowserRouter>
       </UserContextProvider>
     )
   }

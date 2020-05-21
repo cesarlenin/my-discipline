@@ -49,7 +49,34 @@ const HabitsApiService = {
           ? res.json().then(e => Promise.reject(e))
           : res.json()
       )
-  }
+  },
+
+   postAction(date,id) {
+    const habit_id = Number(id);
+    const date_created= new Date(date).toISOString()
+
+    console.log(habit_id)
+    console.log(typeof(habit_id))
+    console.log(date_created)
+    console.log(typeof(date_created))
+
+return fetch(config.API_ENDPOINT+ '/actions', {
+  method: 'POST',
+  headers: {
+    'content-type': 'application/json',
+    'authorization': `bearer ${TokenService.getAuthToken()}`,
+  },
+  body: JSON.stringify({
+    date_created: date_created,
+    habit_id: habit_id
+  }),
+})
+  .then(res =>
+    (!res.ok)
+      ? res.json().then(e => Promise.reject(e))
+      : res.json()
+  )
+}
 
 }
 
