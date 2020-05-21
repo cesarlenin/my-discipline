@@ -55,11 +55,6 @@ const HabitsApiService = {
     const habit_id = Number(id);
     const date_created= new Date(date).toISOString()
 
-    console.log(habit_id)
-    console.log(typeof(habit_id))
-    console.log(date_created)
-    console.log(typeof(date_created))
-
 return fetch(config.API_ENDPOINT+ '/actions', {
   method: 'POST',
   headers: {
@@ -76,7 +71,42 @@ return fetch(config.API_ENDPOINT+ '/actions', {
       ? res.json().then(e => Promise.reject(e))
       : res.json()
   )
-}
+},
+
+DeleteHabit(id) {
+  return fetch(config.API_ENDPOINT+ `/habits/${id}`, {
+  method: 'DELETE',
+  headers: {
+    'content-type': 'application/json',
+    'authorization': `bearer ${TokenService.getAuthToken()}`,
+  },
+  })
+  .then(res =>
+    (!res.ok)
+      ? res.json().then(e => Promise.reject(e))
+      : res.json()
+  )
+  },
+
+  editHabit(habit_name, description, goal,id) {
+    return fetch(config.API_ENDPOINT+ `/habits/${id}`, {
+      method: 'PATCH',
+      headers: {
+        'content-type': 'application/json',
+        'authorization': `bearer ${TokenService.getAuthToken()}`,
+      },
+      body: JSON.stringify({
+        habit_name: habit_name,
+        goal: goal,
+        description: description,
+      }),
+    })
+      .then(res =>
+        (!res.ok)
+          ? res.json().then(e => Promise.reject(e))
+          : res.json()
+      )
+  },
 
 }
 

@@ -13,6 +13,7 @@ const UserContext = React.createContext({
     clearAuthToken: () => {},
     addHabit: () => {},
     addAction: () => {},
+    removeHabit: () => {},
   });
 
 
@@ -69,6 +70,12 @@ export class UserContextProvider extends Component {
     this.setActions([
       ...this.state.actions,
       actions
+    ])
+  }
+
+  removeHabit = habits => {
+    this.setActions([
+      this.state.habits.filter((val) => val.id !== habits.id)
     ])
   }
 
