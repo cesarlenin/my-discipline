@@ -87,8 +87,12 @@ export class HabitForm extends Component {
               onChange={(e) => this.updateGoal(e.target.value)}
               />
               </div>
-
-              <button type="submit" value="Submit" >
+              
+            <button type="submit" value="Submit" disabled={
+            this.validateName() ||
+            this.validateDescription() ||
+            this.validateGoal()
+            }>
               Submit
               </button>
       </form>
