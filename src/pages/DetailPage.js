@@ -8,15 +8,15 @@ export class DetailPage extends Component {
 
 
   render() {
-    const { habits } = this.context;
+    const {habits} = this.context;
     const shownHabit = habits.find(
-      (habit) => habit.id === this.props.match.params.habitId
+      (habit) => habit.id === Number( this.props.match.params.habitId)
     );
 
     return (
         <main>
           <header>
-            <h2>{shownHabit.name}</h2>
+            <h2>{shownHabit.habit_name}</h2>
           </header>
           <section>
           <Calendar/>

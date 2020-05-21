@@ -1,5 +1,5 @@
 import config from '../config';
-import TokenService from './token-service';
+// import TokenService from './token-service';
 
 const HabitsApiService = {
     getHabits() {
@@ -11,10 +11,10 @@ const HabitsApiService = {
             },
         })
           .then(res =>
-            (!res.ok)
-              ? res.json().then(e => Promise.reject(e))
-              : res.json()
-          )
+             (!res.ok)
+               ? res.json().then(e => Promise.reject(e))
+               : res.json()
+            )
       },
       getActions() {
         return fetch(config.API_ENDPOINT+ '/actions', {

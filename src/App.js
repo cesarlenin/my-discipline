@@ -10,7 +10,7 @@ import DetailPage from './pages/DetailPage';
 import Nav from './components/Nav/Nav';
 import PrivateRoute from './components/Utils/PrivateRoute'
 import PublicOnlyRoute from './components/Utils/PublicOnlyRoute'
-// import UserContext from './components/UserContext';
+import {UserContextProvider} from './components/UserContext';
 // import config from './config';
 // import STORE from './dummy-store';
 import './App.css'
@@ -18,11 +18,11 @@ import './App.css'
 class App extends Component {
   render() {
     return (
-      <div>
+      <UserContextProvider>
       <Nav/>
       <main className='App__main'>
         <Switch>
-          <Route exact path="/" component={LandingPage} />
+          <PublicOnlyRoute exact path="/" component={LandingPage} />
           <PrivateRoute exact path="/Home" component={HomePage}/>
           <PrivateRoute exact path="/createHabit" component={CreateHabitPage} />
           <PrivateRoute exact path="/AddAction/:habitId" component={AddActionPage} />
@@ -31,7 +31,7 @@ class App extends Component {
           <PublicOnlyRoute component={NotFound} />
         </Switch>
       </main>
-    </div>
+      </UserContextProvider>
     )
   }
 }

@@ -21,7 +21,9 @@ export class UserContextProvider extends Component {
     };
   
     setHabits = habits => {
-      this.setState(habits)
+      this.setState({
+        habits: habits
+      })
     }
   
     setActions = actions => {
@@ -36,7 +38,7 @@ export class UserContextProvider extends Component {
     clearError = () => {
         this.setState({ error: null })
     }
-  
+
     render() {
       const value = {
         habits: this.state.habits,

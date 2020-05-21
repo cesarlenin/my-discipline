@@ -3,7 +3,6 @@ import { Link} from 'react-router-dom'
 import HabitList from '../components/HabitList';
 import UserContext from '../components/UserContext';
 import HabitsApiService from '../services/my-discipline-api-service'
-import config from '../config';
 
 export class HomePage extends Component {
   static contextType = UserContext;
@@ -11,8 +10,8 @@ export class HomePage extends Component {
   componentDidMount() {
     this.context.clearError()
     HabitsApiService.getHabits()
-    .then(this.context.setHabits)
-    .catch(this.context.setError)
+    .then(data=>this.context.setHabits(data))
+    .catch(error=>this.context.setError(error))
 
     this.context.clearError()
     HabitsApiService.getActions()
