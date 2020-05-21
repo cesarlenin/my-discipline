@@ -11,6 +11,8 @@ const UserContext = React.createContext({
     setError: () => {},
     clearError: () => {},
     clearAuthToken: () => {},
+    addHabit: () => {},
+    addAction: () => {},
   });
 
 
@@ -55,6 +57,14 @@ export class UserContextProvider extends Component {
     clearAuthToken = () => {
       this.setState({ authToken: null })
   }
+
+  addHabit = habits => {
+    this.setHabits([
+      ...this.state.habits,
+      habits
+    ])
+  }
+
 
     render() {
       const value = {

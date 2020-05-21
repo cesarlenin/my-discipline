@@ -19,6 +19,7 @@ export class HomePage extends Component {
     .catch(error=>this.context.setError(error))
   }
 
+
   render() {
     return (
     <main>

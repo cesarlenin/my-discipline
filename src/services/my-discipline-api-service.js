@@ -29,7 +29,28 @@ const HabitsApiService = {
               ? res.json().then(e => Promise.reject(e))
               : res.json()
           )
-      }
+      },
+
+       postHabit(habit_name, description, goal) {
+    return fetch(config.API_ENDPOINT+ '/habits', {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json',
+        'authorization': `bearer ${TokenService.getAuthToken()}`,
+      },
+      body: JSON.stringify({
+        habit_name: habit_name,
+        goal: goal,
+        description: description,
+      }),
+    })
+      .then(res =>
+        (!res.ok)
+          ? res.json().then(e => Promise.reject(e))
+          : res.json()
+      )
+  }
+
 }
 
 export default HabitsApiService

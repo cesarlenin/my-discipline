@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
+import UserContext from '../components/UserContext';
 import ValidationError from './ValidationError';
+import HabitsApiService from '../services/my-discipline-api-service'
 
 export class HabitForm extends Component {
+  static contextType = UserContext;
   constructor(props) {
     super(props);
     this.state = {
@@ -19,6 +22,14 @@ export class HabitForm extends Component {
       },
     };
   }
+
+  handleSubmit = e => {
+    this.context.clearError()
+    HabitsApiService.postHabit(this.state.name.value, this.state.description.value, this.state.goal.value)
+    .then(this.context.addHabit)
+    .catch(this.context.setError)
+  }
+
   validateName() {
     const name = this.state.name.value.trim();
     if (name.length === 0) {
@@ -42,10 +53,11 @@ export class HabitForm extends Component {
     this.setState({ description: { value: description, touched: true } });
   }
   validateGoal() {
-    const goal = this.state.goal.value;
+    const goal = Number(this.state.goal.value);
     if (!goal) {
-      return 'goal is required';
-    }else if (goal<=0) {
+      return 'goal has to be a number';
+    }
+    else if (goal<=0) {
       return 'goal must from 1 to 7 days';
     } else if (goal>7) {
       return 'goal must from 1 to 7 days';
@@ -62,6 +74,7 @@ export class HabitForm extends Component {
     return (
       <form className='habit-form'
       onSubmit={() => {
+        this.handleSubmit();
         this.props.history.push('/Home');
       }}>
               <div>
