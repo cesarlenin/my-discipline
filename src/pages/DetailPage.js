@@ -1,7 +1,7 @@
 import React, { Component} from 'react'
 import ThreeButtons from '../components/ThreeButtons';
 import UserContext from '../components/UserContext'
-import Calendar from 'react-calendar';
+import WeekCalendar from '../components/WeekCalendar';
 
 export class DetailPage extends Component {
   static contextType = UserContext;
@@ -19,7 +19,7 @@ export class DetailPage extends Component {
             <h2>{shownHabit.habit_name}</h2>
           </header>
           <section>
-          <Calendar/>
+          <WeekCalendar id={shownHabit.id}/>
           </section>
         <section>
               <h3>description</h3>

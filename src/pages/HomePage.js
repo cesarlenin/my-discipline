@@ -15,8 +15,8 @@ export class HomePage extends Component {
 
     this.context.clearError()
     HabitsApiService.getActions()
-    .then(this.context.setActions)
-    .catch(this.context.setError)
+    .then(data=>this.context.setActions(data))
+    .catch(error=>this.context.setError(error))
   }
 
   render() {

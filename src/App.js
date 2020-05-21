@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Route, Switch} from 'react-router-dom'
+import {Switch} from 'react-router-dom'
 import NotFound from './pages/NotFound';
 import LandingPage from './pages/LandingPage';
 import HomePage from './pages/HomePage';
@@ -11,8 +11,6 @@ import Nav from './components/Nav/Nav';
 import PrivateRoute from './components/Utils/PrivateRoute'
 import PublicOnlyRoute from './components/Utils/PublicOnlyRoute'
 import {UserContextProvider} from './components/UserContext';
-// import config from './config';
-// import STORE from './dummy-store';
 import './App.css'
 
 class App extends Component {

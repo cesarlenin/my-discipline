@@ -6,18 +6,13 @@ export class WeekCalendar extends Component {
   static contextType = UserContext;
   render() {
     let daysHTML= [];
-    // let color;
-    // var date = new Date();
-    // date.toUTCString();
-    // console.log(date )
 
-    //find props.id
-    // props.id=== context.actions.id &&  newDay===dateCreated
-    //if bool true color=green
     for (let index = 6; index >= 0; index--) {
         let newDay= new Date();
         newDay.setDate(newDay.getDate()-index);
-        daysHTML.push(<Day key={index} day={newDay} />
+
+
+        daysHTML.push(<Day key={index} id={this.props.id} day={newDay} />
           );
     }
     return ( 

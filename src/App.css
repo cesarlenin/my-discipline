@@ -74,6 +74,12 @@
 }
 
 .day{
+  border: solid black 1px;
+  width: 105px ;
+  height: 70px;
+}
+
+.redDay{
   border: solid red 1px;
   width: 105px ;
   height: 70px;

@@ -27,12 +27,16 @@ export class UserContextProvider extends Component {
     }
   
     setActions = actions => {
-      this.setState(actions)
+      this.setState({
+        actions: actions
+      })
     }
 
     setError = error => {
         console.error(error)
-        this.setState({ error })
+        this.setState({
+          error: error
+        })
       }
     
     clearError = () => {
