@@ -1,5 +1,5 @@
 import config from '../config';
-// import TokenService from './token-service';
+import TokenService from './token-service';
 
 const HabitsApiService = {
     getHabits() {
@@ -7,7 +7,7 @@ const HabitsApiService = {
             method: 'GET',
             headers: {
                 'content-type': 'application/json',
-                'Authorization': `Bearer ${config.API_KEY}`
+                'Authorization': `Bearer ${TokenService.getAuthToken()}`
             },
         })
           .then(res =>
@@ -21,7 +21,7 @@ const HabitsApiService = {
             method: 'GET',
             headers: {
                 'content-type': 'application/json',
-                'Authorization': `Bearer ${config.API_KEY}`
+                'Authorization': `Bearer ${TokenService.getAuthToken()}`
             },
         })
           .then(res =>

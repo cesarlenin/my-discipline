@@ -35,7 +35,7 @@ export class Day extends Component {
           {this.props.day.getDate()}
         </div>
     }else{
-      return<div className='redDay'>
+      return<div className='greenDay'>
           {weekday[this.props.day.getDay()]}
           <br/>
           {this.props.day.getDate()}
