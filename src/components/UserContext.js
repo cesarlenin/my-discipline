@@ -75,11 +75,9 @@ export class UserContextProvider extends Component {
   }
 
   removeHabit = habitId => {
-    console.log(habitId)
-    console.log(this.state.habits.filter((val) => val.id !== habitId))
-    this.setHabits([
+    this.setHabits(
       this.state.habits.filter((val) => val.id !== habitId)
-    ]);
+    );
   }
 
     render() {

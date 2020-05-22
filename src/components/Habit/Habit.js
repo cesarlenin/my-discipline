@@ -15,7 +15,7 @@ export class Habit extends Component {
         </header>
         <WeekCalendar id={this.props.id}/>
         <div className= "habit">
-        <ThreeButtons id={this.props.id}/>
+        <ThreeButtons id={this.props.id} {...this.props}/>
         </div>
       </section>
 

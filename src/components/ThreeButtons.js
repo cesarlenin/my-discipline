@@ -21,7 +21,10 @@ export class ThreeButtons extends Component {
           edit
         </Link>
         <button
-        onClick={() => {this.handleDelete()}}>
+        onClick={() => {
+          this.handleDelete();
+          this.props.history.push('/Home');
+          }}>
           Delete
         </button>
         <Link className="link" to={`/AddAction/${this.props.id}`}>

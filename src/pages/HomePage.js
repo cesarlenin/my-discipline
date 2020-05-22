@@ -35,7 +35,7 @@ export class HomePage extends Component {
       </Link>
       </section>
 
-      <HabitList/>
+      <HabitList {...this.props}/>
     </main>
     )
   }

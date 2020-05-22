@@ -26,7 +26,7 @@ export class HabitForm extends Component {
   handleSubmit = e => {
     this.context.clearError()
     HabitsApiService.editHabit(this.state.name.value, this.state.description.value, this.state.goal.value,this.props.match.params.habitId)
-    .then(data=>this.context.setHabits(data))
+    .then(this.context.setHabits)
     .catch(error=>this.context.setError(error))
   }
 
