@@ -28,6 +28,7 @@ export class UserContextProvider extends Component {
     };
   
     setHabits = habits => {
+      console.log(habits);
       this.setState({
         habits: habits
       })
@@ -73,10 +74,12 @@ export class UserContextProvider extends Component {
     ])
   }
 
-  removeHabit = habits => {
-    this.setActions([
-      this.state.habits.filter((val) => val.id !== habits.id)
-    ])
+  removeHabit = habitId => {
+    console.log(habitId)
+    console.log(this.state.habits.filter((val) => val.id !== habitId))
+    this.setHabits([
+      this.state.habits.filter((val) => val.id !== habitId)
+    ]);
   }
 
     render() {
@@ -90,7 +93,8 @@ export class UserContextProvider extends Component {
         setHabits: this.setHabits,
         setActions: this.setActions,
         setAuthToken:this.setAuthToken,
-        clearAuthToken:this.clearAuthToken
+        clearAuthToken:this.clearAuthToken,
+        removeHabit:this.removeHabit
       }
       return (
         <UserContext.Provider value={value}>

@@ -8,9 +8,10 @@ export class ThreeButtons extends Component {
 
   handleDelete = e => {
     this.context.clearError()
-    HabitsApiService.DeleteHabit(this.props.id)
-    .then(this.context.removeHabit)
-    .catch(this.context.setError)
+    let removeHabit= this.context.removeHabit;
+    HabitsApiService.deleteHabit(this.props.id)
+    .then(()=>removeHabit(this.props.id))
+    .catch(error=>this.context.setError(error))
   }
 
   render() {

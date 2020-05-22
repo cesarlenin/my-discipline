@@ -27,7 +27,7 @@ export class DetailPage extends Component {
         </section>
         <section>
             <h3>goal</h3>
-          <p>{shownHabit.goal}</p>
+          <p>{shownHabit.goal} times a week</p>
         </section>
         <section className= "aButton">
         <ThreeButtons id={shownHabit.id}/>

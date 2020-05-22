@@ -73,7 +73,7 @@ return fetch(config.API_ENDPOINT+ '/actions', {
   )
 },
 
-DeleteHabit(id) {
+deleteHabit(id) {
   return fetch(config.API_ENDPOINT+ `/habits/${id}`, {
   method: 'DELETE',
   headers: {
@@ -84,7 +84,8 @@ DeleteHabit(id) {
   .then(res =>
     (!res.ok)
       ? res.json().then(e => Promise.reject(e))
-      : res.json()
+      : res
+      //:re.json
   )
   },
 
