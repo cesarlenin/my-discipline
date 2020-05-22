@@ -53,7 +53,23 @@ const HabitsApiService = {
 
    postAction(date,id) {
     const habit_id = Number(id);
-    const date_created= new Date(date).toISOString()
+    let newDate = new Date(date);
+    let now = new Date();
+    const Hours= now.getUTCHours()
+    const day= newDate.getUTCDate();
+    const month = newDate.getUTCMonth();
+    const year = newDate.getUTCFullYear();
+    const utcDate1 = new Date(Date.UTC(year, month, day, Hours, 4, 5));
+    // console.log(utcDate1)
+    // console.log(utcDate1.toISOString())
+    // console.log(day)
+    // console.log(month)
+    // console.log(date)
+    // console.log(typeof(date))
+    // console.log(typeof(new Date(date)))
+    // console.log(new Date(date).toISOString())
+    // const date_created= new Date(date).toISOString()
+    const date_created= utcDate1.toISOString()
 
 return fetch(config.API_ENDPOINT+ '/actions', {
   method: 'POST',

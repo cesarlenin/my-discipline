@@ -24,8 +24,13 @@ export class Day extends Component {
     let actionsShown = actions.filter(
       (action) => action.habit_id === this.props.id
       );
+
+    // console.log('shown'+this.props.day)
     let shownDate = actionsShown.find(
-      (action) => datesAreOnSameDay(this.props.day, new Date(action.date_created))
+      (action) =>{ 
+        // console.log('db'+new Date(action.date_created));
+        return datesAreOnSameDay(this.props.day, new Date(action.date_created))
+      }
     );
 
     if(!shownDate){
