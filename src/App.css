@@ -1,14 +1,20 @@
 * {
     box-sizing: border-box;
   }
-  
-  body {
+  html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
     font-family: "Open Sans",
     sans-serif;
     font-size: 20px;
     color: #444;
     text-align: center;
     line-height: 1.5;
+    height: 100%;
+    background-color: #edf0f5;
   }
   
   nav{
@@ -25,17 +31,23 @@
   }
   
   header {
-    padding: 45px 15px;
+    padding: 35px 15px;
+    text-align: center;
+  }
+
+  input{
+    border-color: #bdc7d8;
+    border: 1px solid #ccd0d5;
   }
   
-  section {
+  /* section {
     padding:15px;
     background-color: #bbb;
   }
   
   section:nth-child(even) {
     background-color: #ddd;
-  }
+  } */
   
   p {
     margin: 0 auto;
@@ -46,7 +58,7 @@
     margin-top: 15px;
   }
   
-  .aButton a,  .habit-form a, .add-action-form a, .habit a{
+  .create a,  .habit-form a, .add-action-form a, .threeButtons a{
     font: bold 11px Arial;
     text-decoration: none;
     background-color: #EEEEEE;
@@ -56,6 +68,19 @@
     border-right: 1px solid #333333;
     border-bottom: 1px solid #333333;
     border-left: 1px solid #CCCCCC;
+  }
+
+  .create{
+    display: flex;
+    justify-content: center;
+  }
+  .create a{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .links{
@@ -89,4 +114,35 @@
   width: 55px ;
   height: 45px;
   font-size: 11.5px;
+}
+
+.list{
+  border: solid 2px black;
+  margin: 10px;
+  padding: 10px 0px;
+}
+
+.detail{
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+
+.hDetails{
+  border-bottom: 1px solid black;
+}
+
+.weekCalendar{
+  margin: 5px 0px;
+}
+
+span{
+  font-size: x-large;
+}
+
+.red{
+  color: red;
+}
+
+.blue{
+  color: blue;
 }

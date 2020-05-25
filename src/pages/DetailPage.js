@@ -39,26 +39,27 @@ export class DetailPage extends Component {
     
     return (
         <main>
-          <header>
+          <header className="hDetails">
+            <h1>Habit Name:</h1>
             <h2>{shownHabit.habit_name}</h2>
           </header>
-          <section>
+          <section className="detail">
           <WeekCalendar id={shownHabit.id}/>
           </section>
-        <section>
-              <h3>description</h3>
+        <section className="detail">
+              <h3>Description:</h3>
               <p>{shownHabit.description}</p>
         </section>
-        <section>
-          <h3>goal</h3>
+        <section className="detail">
+          <h3>Goal:</h3>
           <p>{shownHabit.goal} times a week</p>
           <br/>
           {(progress>=shownHabit.goal)? 
-          <h4>congratulations you're doing great</h4>:
-          <h4>keep working on it you can do it</h4>
+          <span className="blue">congratulations!<br/> you're doing great</span>:
+          <span className="red">keep working on it,<br/> you can do it</span>
           }
         </section>
-        <section className= "aButton">
+        <section className= "threeButtons detail">
         <ThreeButtons id={shownHabit.id} {...this.props}/>
         </section>
       </main>

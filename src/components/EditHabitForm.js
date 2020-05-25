@@ -79,7 +79,7 @@ export class HabitForm extends Component {
         }}>
               <div>
               {this.state.name.touched && <ValidationError message={nameError} />}
-              <label htmlFor="name">name</label>
+              <label htmlFor="name">Name:</label>
               <input  type="text" name='name' id='name' defaultValue={this.props.habit.habit_name}
               onChange={(e) => this.updateName(e.target.value)}
               />
@@ -87,7 +87,7 @@ export class HabitForm extends Component {
 
               <div>
               {this.state.description.touched && <ValidationError message={contentError} />}
-              <label htmlFor="description">description</label>
+              <label htmlFor="description">Description:</label>
               <input type="text" name='description' id='description' defaultValue={this.props.habit.description}  
               onChange={(e) => this.updateDescription(e.target.value)}
               />
@@ -95,7 +95,7 @@ export class HabitForm extends Component {
 
               <div>
               {this.state.goal.touched && <ValidationError message={goalError} />}
-              <label htmlFor="Goal">Goal</label>
+              <label htmlFor="Goal">Goal:</label>
               <input type="number" name='Goal' id='Goal' min="1" max="7" defaultValue={this.props.habit.goal}
               onChange={(e) => this.updateGoal(e.target.value)}
               />

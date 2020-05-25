@@ -29,7 +29,7 @@ export class HomePage extends Component {
         <h1>Habit Collection</h1>
       </header>
 
-      <section className= "aButton">
+      <section className= "create">
       <Link to='/createHabit'>
       create habit
       </Link>

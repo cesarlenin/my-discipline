@@ -79,7 +79,7 @@ export class HabitForm extends Component {
       }}>
               <div>
               {this.state.name.touched && <ValidationError message={nameError} />}
-              <label htmlFor="name">name</label>
+              <label htmlFor="name">Name:</label>
               <input placeholder='read a book' type="text" name='name' id='name' 
               onChange={(e) => this.updateName(e.target.value)}
               />
@@ -87,7 +87,7 @@ export class HabitForm extends Component {
 
               <div>
               {this.state.description.touched && <ValidationError message={contentError} />}
-              <label htmlFor="description">description</label>
+              <label htmlFor="description">Description:</label>
               <input type="text" name='description' id='description' placeholder='description' 
               onChange={(e) => this.updateDescription(e.target.value)}
               />

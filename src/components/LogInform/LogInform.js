@@ -46,7 +46,7 @@ export default class LoginForm extends Component {
         </div>
         <div className='user_name'>
           <label htmlFor='LoginForm__user_name'>
-            User name
+            User name:
           </label>
           <Input
             required
@@ -56,7 +56,7 @@ export default class LoginForm extends Component {
         </div>
         <div className='password'>
           <label htmlFor='LoginForm__password'>
-            Password
+            Password:
           </label>
           <Input
             required
