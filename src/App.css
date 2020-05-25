@@ -63,8 +63,12 @@
     width: 100%;
     border: none;
     margin: 5px;
-    padding: 5px;
     text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.links:hover {
+  color: red;
 }
 
 .weekCalendar{
@@ -75,12 +79,14 @@
 
 .day{
   border: solid black 1px;
-  width: 105px ;
-  height: 70px;
+  width: 55px ;
+  height: 45px;
+  font-size: 11.5px;
 }
 
 .greenDay{
   border: solid green 3px;
-  width: 105px ;
-  height: 70px;
+  width: 55px ;
+  height: 45px;
+  font-size: 11.5px;
 }

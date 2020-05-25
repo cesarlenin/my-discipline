@@ -8,11 +8,9 @@ export class Habit extends Component {
     
     return ( 
         <section>
-        <header>
         <NavLink className="links" to={`/Detail/${this.props.id}`}>
         <h2>{this.props.name}</h2>
         </NavLink>
-        </header>
         <WeekCalendar id={this.props.id}/>
         <div className= "habit">
         <ThreeButtons id={this.props.id} {...this.props}/>
