@@ -1,3 +1,16 @@
 .smallerH1{
     font-size: 23px;
 }
+
+.landingPage_header{
+    padding: 35px 15px 0px 15px;
+}
+
+.log-in{
+    padding: 20px 0px;
+}
+
+.appInfo{
+    margin: auto;
+    font-size: 15px;
+}

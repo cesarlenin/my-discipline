@@ -56,8 +56,8 @@ export class DetailPage extends Component {
           <p>{shownHabit.goal} times a week</p>
           <br/>
           {(progress>=shownHabit.goal)? 
-          <span className="result blue">congratulations!<br/> you're doing great</span>:
-          <span className="result red">keep working on it,<br/> you can do it</span>
+          <span className="result blue">Congratulations!<br/> You're doing great.</span>:
+          <span className="result red">Keep working on it,<br/> you can do it!</span>
           }
         </section>
         <section className= "threeButtons detail">
