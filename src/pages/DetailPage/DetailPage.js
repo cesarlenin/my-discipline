@@ -39,7 +39,7 @@ export class DetailPage extends Component {
     }
     
     return (
-        <main>
+        <section>
           <header className="hDetails">
             <h1>Habit Name:</h1>
             <h2>{shownHabit.habit_name}</h2>
@@ -63,7 +63,7 @@ export class DetailPage extends Component {
         <section className= "threeButtons detail">
         <ThreeButtons id={shownHabit.id} {...this.props}/>
         </section>
-      </main>
+      </section>
     )
   }
 }

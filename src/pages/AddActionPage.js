@@ -4,14 +4,14 @@ import ActionForm from '../components/ActionForm';
 export class AddActionPage extends Component {
   render() {
     return (
-        <main role="main">
+      <section>
 		<header role="banner">
 			<h1>Add action</h1>
 		</header>
         <section>
             <ActionForm {...this.props}/>
       </section>
-    </main>
+      </section>
     )
   }
 }

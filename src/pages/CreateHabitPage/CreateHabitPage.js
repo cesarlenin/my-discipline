@@ -5,14 +5,14 @@ export class CreateHabitPage extends Component {
   
   render() {
     return (
-    <main>
+    <section>
       <header >
         <h1>Create Habit</h1>
       </header>
       <section className= 'createHabit'>
             <HabitForm {...this.props} />
       </section>
-      </main>
+      </section>
     )
   }
 }

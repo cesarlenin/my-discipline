@@ -16,6 +16,10 @@ body {
     height: 100%;
     background-color: #edf0f5;
   }
+
+  main{
+    margin-bottom: 20px;
+  }
   
   header {
     padding: 35px 15px;
@@ -31,6 +35,9 @@ body {
   h1 h2, h3, h4{
     color: black;
   }
+  h1{
+    padding-top: 5px;
+  }
   p {
     margin: 0 auto;
     max-width: 650px;
@@ -40,10 +47,20 @@ body {
     margin-top: 15px;
   }
 
-  .red{
-    color: red;
-  }
-  
-  .blue{
-    color: blue;
-  }
+footer.footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  font-size: .8rem; 
+  padding-left: 1rem;
+  color: rgb(170, 170, 170);
+}
+
+
+.red{
+  color: #C1292E;
+}
+
+.blue{
+  color: blue  ;
+}

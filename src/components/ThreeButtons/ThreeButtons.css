@@ -10,31 +10,25 @@
 }
 
 .backRed{
-    background-color: red;
-    color: white;
+    background-color: #C1292E;
 }
 
 .backRed:hover{
-    background-color: rgb(148, 3, 3);
-    color: white;
+    background-color: rgb(133, 29, 32);
 }
 
 .backGreen{
-    background-color: green;
-    color: white;
+    background-color: #4CB944;
 }
 
 .backGreen:hover{
-    background-color: rgb(1, 75, 1);
-    color: white;
+    background-color: rgb(54, 133, 48);
 }
 
 .backBlue{
-    background-color: blue;
-    color: white;
+    background-color: #3B5998;
 }
 
 .backBlue:hover{
-    background-color: rgb(2, 2, 107);
-    color: white;
+    background-color: rgb(38, 56, 95);
 }

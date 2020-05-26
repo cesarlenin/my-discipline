@@ -30,6 +30,7 @@ class App extends Component {
           <PublicOnlyRoute component={NotFound} />
         </Switch>
       </main>
+      <footer className='footer'>@2020 Cesar Morales.</footer>
       </BrowserRouter>
       </UserContextProvider>
     )

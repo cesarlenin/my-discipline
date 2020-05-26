@@ -11,14 +11,14 @@ export class EditHabitPage extends Component {
       (habit) => habit.id === Number(this.props.match.params.habitId)
     );
     return (
-      <main>
+      <section>
       <header>
         <h1>Edit Habit</h1>
       </header>
       <section className='edit'>
           <EditHabitForm habit={shownHabit} {...this.props}/>
       </section>
-    </main>
+    </section>
     )
   }
 }

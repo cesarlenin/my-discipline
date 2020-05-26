@@ -4,7 +4,7 @@ import './LandingPage.css'
 export class LandingPage extends Component {
   render() {
     return (
-    <div className='landingPage'>
+    <section className='landingPage'>
         <header className='landingPage_header'>
             <h1 className= 'smallerH1'>Be Organized<br/> 
             Be Disciplined<br/> 
@@ -13,7 +13,7 @@ export class LandingPage extends Component {
         <section>
         <LogInform/>
         </section>
-    </div>
+    </section>
     )
   }
 }

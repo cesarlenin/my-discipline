@@ -25,7 +25,7 @@ export class HomePage extends Component {
 
   render() {
     return (
-    <main>
+    <section>
       <header>
         <h1>My Habits</h1>
       </header>
@@ -37,7 +37,7 @@ export class HomePage extends Component {
       </section>
 
       <HabitList {...this.props}/>
-    </main>
+    </section>
     )
   }
 }
