@@ -10,13 +10,15 @@ export class LandingPage extends Component {
             Be Disciplined<br/> 
             Be A Better You</h1>
         </header>
-        <p className= 'appInfo'>My Discipline helps you keep track of your habits.<br/>
-        Set goals you want to meet.
-        Build a collection of habits you want to have.
-        Quickly see the actual frequency of your habits in a calendar.
+        <section>
+        <p className= 'appInfo'>My Discipline helps you keep track of your habits.<br/> 
+        Start by setting goals you want to meet.<br/> 
+        Then build a collection of habits you want to have,<br/> 
+        and see their actual frequency in a calendar.
         </p>
         <section className='log-in'>
         <LogInform/>
+        </section>
         </section>
     </section>
     )
