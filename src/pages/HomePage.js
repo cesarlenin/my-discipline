@@ -31,7 +31,7 @@ export class HomePage extends Component {
 
       <section className= "create">
       <Link to='/createHabit'>
-      create habit
+      Create Habit
       </Link>
       </section>
 
