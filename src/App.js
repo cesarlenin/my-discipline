@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
 import {Switch, BrowserRouter} from 'react-router-dom'
 import NotFound from './pages/NotFound';
-import LandingPage from './pages/LandingPage';
-import HomePage from './pages/HomePage';
-import CreateHabitPage from './pages/CreateHabitPage';
+import LandingPage from './pages/LandingPage/LandingPage';
+import HomePage from './pages/HomePage/HomePage';
+import CreateHabitPage from './pages/CreateHabitPage/CreateHabitPage';
 import AddActionPage from './pages/AddActionPage';
-import EditHabitPage from './pages/EditHabitPage';
-import DetailPage from './pages/DetailPage';
+import EditHabitPage from './pages/EditHabitPage/EditHabitPage';
+import DetailPage from './pages/DetailPage/DetailPage';
 import Nav from './components/Nav/Nav';
 import PrivateRoute from './components/Utils/PrivateRoute'
 import PublicOnlyRoute from './components/Utils/PublicOnlyRoute'
-import {UserContextProvider} from './components/UserContext';
+import {UserContextProvider} from './components/UserContext/UserContext';
 import './App.css'
 
 class App extends Component {

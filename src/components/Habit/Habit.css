@@ -1,0 +1,20 @@
+.links{
+    display: block;
+    width: 100%;
+    border: none;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.links:hover {
+  color: red;
+}
+
+.list{
+    border: solid 2px black;
+    margin: 25px 10px;
+    padding: 10px 0px;
+    border-radius: 25px;
+    background-color: white;
+  }

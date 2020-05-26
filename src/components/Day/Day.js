@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import UserContext from './UserContext';
+import UserContext from '../UserContext/UserContext';
+import './Day.css'
 
 export class Day extends Component {
   static contextType = UserContext;

@@ -1,15 +1,14 @@
 import React, { Component } from 'react'
-import LogInform from '../components/LogInform/LogInform'
-
+import LogInform from '../../components/LogInform/LogInform'
+import './LandingPage.css'
 export class LandingPage extends Component {
   render() {
     return (
     <div className='landingPage'>
         <header className='landingPage_header'>
-            <h1>MyDiscipline</h1>
-            <h3>Be Organized<br/> 
+            <h1 className= 'smallerH1'>Be Organized<br/> 
             Be Disciplined<br/> 
-            Be A Better You</h3>
+            Be A Better You</h1>
         </header>
         <section>
         <LogInform/>

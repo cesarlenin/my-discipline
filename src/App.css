@@ -39,104 +39,11 @@ body {
   p + p {
     margin-top: 15px;
   }
+
+  .red{
+    color: red;
+  }
   
-  .create a,  .habit-form a, .add-action-form a, .threeButtons a{
-    font: bold 11px Arial;
-    text-decoration: none;
-    background-color: #EEEEEE;
-    color: #333333;
-    padding: 2px 6px 2px 6px;
-    border-top: 1px solid #CCCCCC;
-    border-right: 1px solid #333333;
-    border-bottom: 1px solid #333333;
-    border-left: 1px solid #CCCCCC;
+  .blue{
+    color: blue;
   }
-
-  .create{
-    display: flex;
-    justify-content: center;
-  }
-  .create a{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    font-size: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-radius: 25px;
-    border: solid black 2px;
-    color: white;
-    background-color: #4CAF50;
-  }
-  .create a:hover{
-    background-color: rgb(62, 143, 65);
-  }
-
-  .links{
-    display: block;
-    width: 100%;
-    border: none;
-    margin: 5px;
-    text-align: center;
-    text-decoration: none;
-    color: black;
-}
-.links:hover {
-  color: red;
-}
-
-.weekCalendar{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.day{
-  border: solid black 1px;
-  width: 55px ;
-  height: 45px;
-  font-size: 11.5px;
-  background-color: #e8ebf1;
-
-}
-
-.greenDay{
-  border: solid green 3px;
-  width: 55px ;
-  height: 45px;
-  font-size: 11.5px;
-  background-color: #e8ebf1;
-}
-
-.list{
-  border: solid 2px black;
-  margin: 25px 10px;
-  padding: 10px 0px;
-  border-radius: 25px;
-  background-color: white;
-}
-
-.detail{
-  border-bottom: 1px solid black;
-  padding: 10px;
-}
-
-.hDetails{
-  border-bottom: 1px solid black;
-}
-
-.weekCalendar{
-  margin: 5px 0px;
-}
-
-.result{
-  font-size: x-large;
-}
-
-.red{
-  color: red;
-}
-
-.blue{
-  color: blue;
-}

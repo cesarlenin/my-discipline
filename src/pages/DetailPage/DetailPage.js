@@ -1,7 +1,8 @@
 import React, { Component} from 'react'
-import ThreeButtons from '../components/ThreeButtons';
-import UserContext from '../components/UserContext'
-import WeekCalendar from '../components/WeekCalendar';
+import ThreeButtons from '../../components/ThreeButtons/ThreeButtons';
+import UserContext from '../../components/UserContext/UserContext'
+import WeekCalendar from '../../components/WeekCalendar/WeekCalendar';
+import './DetailPage.css'
 
 export class DetailPage extends Component {
   static contextType = UserContext;

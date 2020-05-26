@@ -1,0 +1,17 @@
+.day{
+    border: solid black 1px;
+    width: 55px ;
+    height: 45px;
+    font-size: 11.5px;
+    background-color: #e8ebf1;
+  
+  }
+  
+  .greenDay{
+    border: solid green 3px;
+    width: 55px ;
+    height: 45px;
+    font-size: 11.5px;
+    background-color: #e8ebf1;
+  }
+  

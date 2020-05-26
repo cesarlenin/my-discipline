@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import { Link} from 'react-router-dom'
-import HabitList from '../components/HabitList';
-import UserContext from '../components/UserContext';
-import HabitsApiService from '../services/my-discipline-api-service'
+import HabitList from '../../components/HabitList';
+import UserContext from '../../components/UserContext/UserContext';
+import HabitsApiService from '../../services/my-discipline-api-service'
+import './HomePage.css'
 
 export class HomePage extends Component {
   static contextType = UserContext;

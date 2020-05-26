@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import UserContext from './UserContext'
+import UserContext from './UserContext/UserContext'
 import Habit from '../components/Habit/Habit';
 
 export class HabitList extends Component {

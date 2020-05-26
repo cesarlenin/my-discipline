@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import HabitForm from '../components/HabitForm';
-
+import HabitForm from '../../components/HabitForm/HabitForm';
+import './CreateHabitPage.css'
 export class CreateHabitPage extends Component {
   
   render() {
@@ -9,7 +9,7 @@ export class CreateHabitPage extends Component {
       <header >
         <h1>Create Habit</h1>
       </header>
-      <section>
+      <section className= 'createHabit'>
             <HabitForm {...this.props} />
       </section>
       </main>

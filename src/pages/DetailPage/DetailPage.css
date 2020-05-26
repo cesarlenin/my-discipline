@@ -1,0 +1,12 @@
+.detail{
+    border-bottom: 1px solid black;
+    padding: 10px;
+  }
+  
+  .hDetails{
+    border-bottom: 1px solid black;
+  }
+  
+  .result{
+    font-size: x-large;
+  }

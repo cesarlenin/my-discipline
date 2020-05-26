@@ -1,0 +1,40 @@
+.button, .threeButtons a{
+    font: bold 11px Arial;
+    text-decoration: none;
+    color: white;
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+}
+
+.backRed{
+    background-color: red;
+    color: white;
+}
+
+.backRed:hover{
+    background-color: rgb(148, 3, 3);
+    color: white;
+}
+
+.backGreen{
+    background-color: green;
+    color: white;
+}
+
+.backGreen:hover{
+    background-color: rgb(1, 75, 1);
+    color: white;
+}
+
+.backBlue{
+    background-color: blue;
+    color: white;
+}
+
+.backBlue:hover{
+    background-color: rgb(2, 2, 107);
+    color: white;
+}

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import UserContext from '../components/UserContext';
+import UserContext from './UserContext/UserContext';
 import ValidationError from './ValidationError';
 import HabitsApiService from '../services/my-discipline-api-service'
 

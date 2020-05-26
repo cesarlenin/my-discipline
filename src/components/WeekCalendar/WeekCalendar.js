@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import Day from './Day';
-import UserContext from './UserContext';
+import Day from '../Day/Day';
+import UserContext from '../UserContext/UserContext';
+import './WeekCalendar.css'
 
 export class WeekCalendar extends Component {
   static contextType = UserContext;

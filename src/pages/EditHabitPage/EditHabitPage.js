@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import EditHabitForm from '../components/EditHabitForm';
-import UserContext from '../components/UserContext'
+import EditHabitForm from '../../components/EditHabitForm/EditHabitForm';
+import UserContext from '../../components/UserContext/UserContext'
+import './EditHabitPage.css'
 
 export class EditHabitPage extends Component {
   static contextType = UserContext;
@@ -14,7 +15,7 @@ export class EditHabitPage extends Component {
       <header>
         <h1>Edit Habit</h1>
       </header>
-      <section>
+      <section className='edit'>
           <EditHabitForm habit={shownHabit} {...this.props}/>
       </section>
     </main>

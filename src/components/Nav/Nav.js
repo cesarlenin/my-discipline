@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 import TokenService from '../../services/token-service'
-import UserContext from '../UserContext'
+import UserContext from '../UserContext/UserContext'
 import './Nav.css'
 
 export class Nav extends Component {

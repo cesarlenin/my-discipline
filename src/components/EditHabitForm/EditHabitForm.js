@@ -1,23 +1,25 @@
 import React, { Component } from 'react'
-import UserContext from '../components/UserContext';
-import ValidationError from './ValidationError';
-import HabitsApiService from '../services/my-discipline-api-service'
+import UserContext from '../UserContext/UserContext';
+import ValidationError from '../ValidationError';
+import HabitsApiService from '../../services/my-discipline-api-service'
+import './EditHabitForm.css'
 
-export class HabitForm extends Component {
+
+export class EditHabitForm extends Component {
   static contextType = UserContext;
   constructor(props) {
     super(props);
     this.state = {
       name: {
-        value: '',
+        value: this.props.habit.habit_name,
         touched: false,
       },
       description: {
-        value: '',
+        value: this.props.habit.description,
         touched: false,
       },
       goal: {
-        value: '',
+        value: this.props.habit.goal,
         touched: false,
       },
     };
@@ -25,9 +27,10 @@ export class HabitForm extends Component {
 
   handleSubmit = e => {
     this.context.clearError()
-    HabitsApiService.postHabit(this.state.name.value, this.state.description.value, this.state.goal.value)
-    .then(this.context.addHabit)
-    .catch(this.context.setError)
+    let editHabit= this.context.editHabit;
+    HabitsApiService.editHabit(this.state.name.value, this.state.description.value, this.state.goal.value,this.props.match.params.habitId)
+    .then(data=>editHabit(data))
+    .catch(error=>this.context.setError(error))
   }
 
   validateName() {
@@ -66,52 +69,45 @@ export class HabitForm extends Component {
   updateGoal(goal) {
     this.setState({ goal: { value: goal, touched: true } });
   }
-
   render() {
-  const nameError = this.validateName();
-  const contentError = this.validateDescription();
-  const goalError = this.validateGoal();
+    const nameError = this.validateName();
+    const contentError = this.validateDescription();
+    const goalError = this.validateGoal();
     return (
-      <form className='habit-form'
-      onSubmit={() => {
-        this.handleSubmit();
-        this.props.history.push('/Home');
-      }}>
-              <div>
-              {this.state.name.touched && <ValidationError message={nameError} />}
+        <form className='edit-habit-form'
+        onSubmit={() => {
+          this.handleSubmit();
+          this.props.history.push('/Home');
+        }}>
+
               <label htmlFor="name">Name:</label>
-              <input placeholder='read a book' type="text" name='name' id='name' 
+              {this.state.name.touched && <ValidationError message={nameError} />}
+              <input  type="text" name='name' id='name' defaultValue={this.props.habit.habit_name}
               onChange={(e) => this.updateName(e.target.value)}
               />
-              </div>
 
-              <div>
-              {this.state.description.touched && <ValidationError message={contentError} />}
               <label htmlFor="description">Description:</label>
-              <input type="text" name='description' id='description' placeholder='description' 
+              {this.state.description.touched && <ValidationError message={contentError} />}
+              <input type="text" name='description' id='description' defaultValue={this.props.habit.description}  
               onChange={(e) => this.updateDescription(e.target.value)}
               />
-              </div>
 
-              <div>
+              <label htmlFor="Goal">Goal:</label>
               {this.state.goal.touched && <ValidationError message={goalError} />}
-              <label htmlFor="Goal">Set a Goal, how many times a week?</label>
-              <br/>
-              <input type="number" name='Goal' id='Goal' min="1" max="7"
+              <input type="number" name='Goal' id='Goal' min="1" max="7" defaultValue={this.props.habit.goal}
               onChange={(e) => this.updateGoal(e.target.value)}
               />
-              </div>
-              
-            <button type="submit" value="Submit" disabled={
-            this.validateName() ||
-            this.validateDescription() ||
-            this.validateGoal()
+
+              <button type="submit" value="Submit" disabled={
+            (this.validateName() && this.state.name.touched) ||
+            (this.validateDescription() && this.state.description.touched) ||
+            (this.validateGoal() && this.state.goal.touched)
             }>
-              Submit
-              </button>
-      </form>
+            Submit
+            </button>
+        </form>
     )
   }
 }
 
-export default HabitForm
+export default EditHabitForm

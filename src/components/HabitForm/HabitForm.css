@@ -1,0 +1,8 @@
+.habit-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 5px;
+    font-size: 15px;
+}
