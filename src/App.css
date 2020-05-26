@@ -135,7 +135,7 @@ body {
   margin: 5px 0px;
 }
 
-span{
+.result{
   font-size: x-large;
 }
 
@@ -145,4 +145,8 @@ span{
 
 .blue{
   color: blue;
+}
+
+.landingPage_header{
+  
 }

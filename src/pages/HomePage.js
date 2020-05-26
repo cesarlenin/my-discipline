@@ -26,7 +26,7 @@ export class HomePage extends Component {
     return (
     <main>
       <header>
-        <h1>Habit Collection</h1>
+        <h1>My Habits</h1>
       </header>
 
       <section className= "create">
