@@ -14,7 +14,7 @@ export class Nav extends Component {
 
   renderLogoutLink() {
     return (
-      <div className='Header__logged-in'>
+      <div className='header__logged-in'>
         <NavLink
           onClick={this.handleLogoutClick}
           to='/'>
@@ -26,7 +26,7 @@ export class Nav extends Component {
 
   renderLoginLink() {
     return (
-      <div className='Header__not-logged-in'>
+      <div className='header__not-logged-in'>
         <NavLink
           to='/'>
           Log in
@@ -37,11 +37,11 @@ export class Nav extends Component {
 
   render() {
     return (
-    <nav className='Header'>
+    <nav className='header'>
           <NavLink to='/'>
           <h2>MY DISCIPLINE</h2>
           </NavLink>
-      <section className='Navlinks'>
+      <section className='navlinks'>
       {this.context.authToken
           ? this.renderLogoutLink()
           : this.renderLoginLink()}

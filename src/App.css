@@ -10,7 +10,7 @@ body {
     font-family: "Open Sans",
     sans-serif;
     font-size: 20px;
-    color: #444;
+    color: black;
     text-align: center;
     line-height: 1.5;
     height: 100%;
@@ -28,11 +28,15 @@ body {
     left: 0;
     right: 0;
     z-index: 10;
+    background-color: #3b5998;
+    color: white
   }
+
   
   header {
     padding: 35px 15px;
     text-align: center;
+    color: black;
   }
 
   input{
@@ -40,15 +44,9 @@ body {
     border: 1px solid #ccd0d5;
   }
   
-  /* section {
-    padding:15px;
-    background-color: #bbb;
+  h1 h2, h3, h4{
+    color: black;
   }
-  
-  section:nth-child(even) {
-    background-color: #ddd;
-  } */
-  
   p {
     margin: 0 auto;
     max-width: 650px;
@@ -120,6 +118,7 @@ body {
   border: solid 2px black;
   margin: 10px;
   padding: 10px 0px;
+  border-radius: 25px;
 }
 
 .detail{

@@ -1,20 +1,21 @@
-.Header {
+.header {
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
   }
 
-.Header h2 {
-    margin: 0;
+.header h2 {
+    margin: 5px;
   }
 
-.Header a {
-    color: #444;
+.header a {
+  color: white;
     text-decoration: none;
   }
 
-.Navlinks{
+.navlinks{
     margin: 5px;
     padding: 5px;
 }
