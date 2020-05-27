@@ -17,7 +17,7 @@ export class ThreeButtons extends Component {
 
   render() {
     return ( 
-        <section>
+        <section className ='buttons'>
         <Link className= 'backGreen' to={`/EditHabit/${this.props.id}`}>
           edit
         </Link>

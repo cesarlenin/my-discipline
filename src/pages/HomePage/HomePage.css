@@ -18,3 +18,12 @@
   .create a:hover{
     background-color: rgb(54, 133, 48);
   }
+
+  @media (min-width: 420px) {
+    .create a{
+      max-width: 500px;
+      font-size: 25px;
+    }
+  }
+  
+

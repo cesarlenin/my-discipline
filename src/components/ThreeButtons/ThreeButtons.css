@@ -1,4 +1,4 @@
-.button, .threeButtons a{
+.button, .buttons a{
     font: bold 11px Arial;
     text-decoration: none;
     color: white;
@@ -7,6 +7,10 @@
     border-right: 1px solid #333333;
     border-bottom: 1px solid #333333;
     border-left: 1px solid #CCCCCC;
+    height: 18px;
+    width: 74px;
+    vertical-align: baseline;
+    display: inline-block;
 }
 
 .backRed{
@@ -32,3 +36,14 @@
 .backBlue:hover{
     background-color: rgb(38, 56, 95);
 }
+
+@media (min-width: 420px) {
+    .button, .buttons a{
+        font: bold 13px Arial;
+        height: 30px;
+        width: 100px;
+        vertical-align: text-top;
+        padding: 8px;
+    }
+  }
+  

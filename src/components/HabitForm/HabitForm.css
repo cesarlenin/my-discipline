@@ -6,3 +6,15 @@
     margin: 5px;
     font-size: 15px;
 }
+
+@media (min-width: 420px) {
+    .habit-form{
+        font-size: 20px;
+    }
+  }
+  
+  @media (min-width: 950px) {
+    .habit-form{
+        font-size: 23px;
+    }
+  }

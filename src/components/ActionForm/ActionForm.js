@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import UserContext from './UserContext/UserContext';
-import ValidationError from './ValidationError';
-import HabitsApiService from '../services/my-discipline-api-service'
+import UserContext from '../UserContext/UserContext';
+import ValidationError from '../ValidationError';
+import HabitsApiService from '../../services/my-discipline-api-service'
+import './ActionForm.css'
 
 export class ActionForm extends Component {
   static contextType = UserContext;

@@ -18,7 +18,7 @@ body {
   }
 
   main{
-    margin: 5px 5px 20px 5px;
+    margin: 5px 20px 20px 20px;
   }
   
   header {
@@ -63,4 +63,29 @@ footer.footer{
 
 .blue{
   color: blue  ;
+}
+
+
+@media (min-width: 420px) {
+  .smallerH1{
+    font-size: 26px;
+  }
+
+  h1{
+    font-size: 35px;
+  }
+  h2{
+    font-size: 30px;
+  }
+
+  h3{
+    font-size: 26px;
+  }
+  
+}
+
+@media (min-width: 950px) {
+  input{
+    font-size: 20px;
+  }
 }

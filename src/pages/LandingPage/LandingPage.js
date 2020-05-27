@@ -10,7 +10,7 @@ export class LandingPage extends Component {
             Be Disciplined<br/> 
             Be A Better You</h1>
         </header>
-        <section>
+        <section className= 'landingContainer'>
         <p className= 'appInfo'>My Discipline helps you keep track of your habits.<br/> 
         Start by setting goals you want to meet.<br/> 
         Then build a collection of habits you want to have,<br/> 

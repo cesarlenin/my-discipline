@@ -13,8 +13,24 @@
 
 .list{
     border: solid 2px black;
-    margin: 25px 10px;
+    margin: 25px 0px;
     padding: 10px 0px;
     border-radius: 25px;
     background-color: white;
+  }
+
+  @media (min-width: 420px) {
+    .list{
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+@media (min-width: 950px) {
+  .list{
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   }
