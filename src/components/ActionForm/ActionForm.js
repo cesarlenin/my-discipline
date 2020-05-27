@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import UserContext from '../UserContext/UserContext';
-import ValidationError from '../ValidationError';
+import ValidationError from '../ValidationError/ValidationError';
 import HabitsApiService from '../../services/my-discipline-api-service'
 import './ActionForm.css'
 

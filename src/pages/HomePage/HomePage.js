@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link} from 'react-router-dom'
-import HabitList from '../../components/HabitList';
+import HabitList from '../../components/HabitList/HabitList';
 import UserContext from '../../components/UserContext/UserContext';
 import HabitsApiService from '../../services/my-discipline-api-service'
 import './HomePage.css'

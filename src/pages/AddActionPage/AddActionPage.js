@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ActionForm from '../components/ActionForm/ActionForm';
+import ActionForm from '../../components/ActionForm/ActionForm';
 
 export class AddActionPage extends Component {
   render() {

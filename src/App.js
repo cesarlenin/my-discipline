@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import {Switch, BrowserRouter} from 'react-router-dom'
-import NotFound from './pages/NotFound';
+import NotFound from './pages/NotFound/NotFound';
 import LandingPage from './pages/LandingPage/LandingPage';
 import HomePage from './pages/HomePage/HomePage';
 import CreateHabitPage from './pages/CreateHabitPage/CreateHabitPage';
-import AddActionPage from './pages/AddActionPage';
+import AddActionPage from './pages/AddActionPage/AddActionPage';
 import EditHabitPage from './pages/EditHabitPage/EditHabitPage';
 import DetailPage from './pages/DetailPage/DetailPage';
 import Nav from './components/Nav/Nav';
