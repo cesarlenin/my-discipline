@@ -1,0 +1,28 @@
+.back{
+    display: flex;
+    justify-content: center;
+  }
+  .back button{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 25px;
+    border: solid black 2px;
+    color: white;
+    background-color: #4CB944 ;
+    text-decoration: none;
+    margin: 20px;
+  }
+  .back button:hover{
+    background-color: rgb(54, 133, 48);
+  }
+
+  @media (min-width: 420px) {
+    .back button{
+      max-width: 500px;
+      font-size: 25px;
+    }
+  }

@@ -2,6 +2,7 @@ import React, { Component} from 'react'
 import ThreeButtons from '../../components/ThreeButtons/ThreeButtons';
 import UserContext from '../../components/UserContext/UserContext'
 import WeekCalendar from '../../components/WeekCalendar/WeekCalendar';
+import BackButton from '../../components/BackButton/BackButton';
 import './DetailPage.css'
 
 export class DetailPage extends Component {
@@ -44,6 +45,7 @@ export class DetailPage extends Component {
             <h1>Habit Name:</h1>
             <h2>{shownHabit.habit_name}</h2>
           </header>
+          <BackButton {...this.props}/>
           <section className="detail">
           <WeekCalendar id={shownHabit.id}/>
           </section>
