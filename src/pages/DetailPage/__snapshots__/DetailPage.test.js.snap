@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DetailPages /> renders this UI as expected 1`] = `
+<section>
+  <header
+    className="hDetails"
+  >
+    <h1>
+      Habit Name:
+    </h1>
+    <h2>
+      Read a book
+    </h2>
+  </header>
+  <div
+    className="back"
+  >
+    <button
+      onClick={[Function]}
+    >
+      Go Back
+    </button>
+  </div>
+  <section
+    className="detail"
+  >
+    <div
+      className="weekCalendar"
+    >
+      <div
+        className="day"
+      >
+        Thu
+        <br />
+        21
+      </div>
+      <div
+        className="day"
+      >
+        Fri
+        <br />
+        22
+      </div>
+      <div
+        className="day"
+      >
+        Sat
+        <br />
+        23
+      </div>
+      <div
+        className="day"
+      >
+        Sun
+        <br />
+        24
+      </div>
+      <div
+        className="day"
+      >
+        Mon
+        <br />
+        25
+      </div>
+      <div
+        className="day"
+      >
+        Tue
+        <br />
+        26
+      </div>
+      <div
+        className="day"
+      >
+        Wed
+        <br />
+        27
+      </div>
+    </div>
+  </section>
+  <section
+    className="detail"
+  >
+    <h3>
+      Description:
+    </h3>
+    <p>
+      Important
+    </p>
+  </section>
+  <section
+    className="detail"
+  >
+    <h3>
+      Goal:
+    </h3>
+    <p>
+      7
+       times a week
+    </p>
+    <br />
+    <span
+      className="result red"
+    >
+      Keep working on it,
+      <br />
+       you can do it!
+    </span>
+  </section>
+  <section
+    className="threeButtons detail"
+  >
+    <section
+      className="buttons"
+    >
+      <a
+        className="backGreen"
+        href="/EditHabit/1"
+        onClick={[Function]}
+      >
+        edit
+      </a>
+      <a
+        className="backBlue"
+        href="/AddAction/1"
+        onClick={[Function]}
+      >
+        Add Action
+      </a>
+      <button
+        className="button backRed"
+        onClick={[Function]}
+      >
+        Delete
+      </button>
+    </section>
+  </section>
+</section>
+`;

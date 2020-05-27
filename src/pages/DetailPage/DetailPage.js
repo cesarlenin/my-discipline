@@ -11,10 +11,9 @@ export class DetailPage extends Component {
 
   render() {
     const {habits, actions} = this.context;
-    const shownHabit = this.context.habits.find(
+    const shownHabit = habits.find(
       (habit) => habit.id === Number( this.props.match.params.habitId)
     );
-    console.log('string', this.context)
 
     const datesAreOnSameDay = (first, second) =>
     first.getFullYear() === second.getFullYear() &&

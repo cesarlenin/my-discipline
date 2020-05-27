@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import HabitList from './HabitList';
+import WeekCalendar from './WeekCalendar';
 
-describe('<HabitList />', () => {
+describe('<WeekCalendar />', () => {
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<HabitList/>, div);
+  ReactDOM.render(<WeekCalendar/>, div);
   ReactDOM.unmountComponentAtNode(div);
 });
 });

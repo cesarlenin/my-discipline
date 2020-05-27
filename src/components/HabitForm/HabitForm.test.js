@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import HabitList from './HabitList';
+import HabitForm from './HabitForm';
 
-describe('<HabitList />', () => {
+describe('<HabitForm />', () => {
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<HabitList/>, div);
+  ReactDOM.render(<HabitForm/>, div);
   ReactDOM.unmountComponentAtNode(div);
 });
 });

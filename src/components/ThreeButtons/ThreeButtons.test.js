@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ActionForm from './ActionForm';
+import { BrowserRouter } from 'react-router-dom';
+import ThreeButtons from './ThreeButtons';
 
-describe('<ActionForm />', () => {
+describe('<ThreeButtons />', () => {
 it('renders without crashing', () => {
   const div = document.createElement('div');
   ReactDOM.render(
-  <ActionForm/>
+      <BrowserRouter>
+      <ThreeButtons/>
+      </BrowserRouter>
   , div);
   ReactDOM.unmountComponentAtNode(div);
 });

@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import HabitList from './HabitList';
+import BackButton from './BackButton';
 
-describe('<HabitList />', () => {
+describe('<BackButton />', () => {
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<HabitList/>, div);
+  ReactDOM.render(<BackButton/>, div);
   ReactDOM.unmountComponentAtNode(div);
 });
 });

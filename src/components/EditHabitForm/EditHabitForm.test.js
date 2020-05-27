@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import HabitList from './HabitList';
+import EditHabitForm from './EditHabitForm';
+import store from '../../dummy-store'
 
-describe('<HabitList />', () => {
+describe('<EditHabitForm />', () => {
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<HabitList/>, div);
+  ReactDOM.render(<EditHabitForm
+  habit={store.habits[0]}
+  />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
 });
