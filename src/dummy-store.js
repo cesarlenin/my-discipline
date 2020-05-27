@@ -1,14 +1,14 @@
 export default {
     "habits": [
       {
-        "id": "b0715efe-ffaf-11e8-8eb2-f2801f1b9fd1",
+        "id": "1",
         "habit_name": "Read a book",
         "goal": 7,
         "description": "Important",
         "date_created": "2019-01-03T00:00:00.000Z",
       },
       {
-        "id": "b0715efe-ffaf-11e8-8eb2-f2801f1ghg",
+        "id": "2",
         "habit_name": "swim",
         "goal": 5,
         "description": "Important",
@@ -17,18 +17,18 @@ export default {
     ],
     "actions": [
       {
-        "id": "cbc787a0-ffaf-11e8-8eb2-f2hfgjfgj",
-        "habit_id": "b0715efe-ffaf-11e8-8eb2-f2801f1b9fd1",
+        "id": "1",
+        "habit_id": "1",
         "date_created": "2019-05-03T00:00:00.000Z"
       },
       {
-        "id": "cbc787a0-ffaf-11e8-8eb2-f2801jlkjkl",
-        "habit_id": "b0715efe-ffaf-11e8-8eb2-f2801f1b9fd1",
+        "id": "2",
+        "habit_id": "1",
         "date_created": "2019-05-04T00:00:00.000Z"
       },
       {
-        "id": "cbc787a0-ffaf-11e8-8eb2-f2801f1b978tyigf",
-        "habit_id": "b0715efe-ffaf-11e8-8eb2-f2801f1ghg",
+        "id": "3",
+        "habit_id": "2",
         "date_created": "2019-05-03T00:00:00.000Z"
       }
     ]

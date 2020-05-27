@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HomePage /> renders this UI as expected 1`] = `
+<section>
+  <header>
+    <h1>
+      My Habits
+    </h1>
+  </header>
+  <section
+    className="create"
+  >
+    <a
+      href="/createHabit"
+      onClick={[Function]}
+    >
+      Create Habit
+    </a>
+  </section>
+  <div />
+</section>
+`;

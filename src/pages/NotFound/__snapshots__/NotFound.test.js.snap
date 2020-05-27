@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NotFound /> renders this UI as expected 1`] = `
+<section>
+  <h1>
+    404 Not Found
+  </h1>
+</section>
+`;

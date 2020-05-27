@@ -26,7 +26,7 @@ class App extends Component {
           <PrivateRoute exact path="/createHabit" component={CreateHabitPage} />
           <PrivateRoute exact path="/AddAction/:habitId" component={AddActionPage} />
           <PrivateRoute exact path="/EditHabit/:habitId" component={EditHabitPage} />
-          <PrivateRoute exact path="/Detail/:habitId" component={DetailPage} />
+          <PrivateRoute exact path="/Detail/:habitId" component={DetailPage}/>
           <PublicOnlyRoute component={NotFound} />
         </Switch>
       </main>

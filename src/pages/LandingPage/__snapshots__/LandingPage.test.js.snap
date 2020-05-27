@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LandingPage /> renders this UI as expected 1`] = `
+<section
+  className="landingPage"
+>
+  <header
+    className="landingPage_header"
+  >
+    <h1
+      className="smallerH1"
+    >
+      Be Organized
+      <br />
+      Be Disciplined
+      <br />
+      Be A Better You
+    </h1>
+  </header>
+  <section
+    className="landingContainer"
+  >
+    <p
+      className="appInfo"
+    >
+      My Discipline helps you keep track of your habits.
+      <br />
+      Start by setting goals you want to meet.
+      <br />
+      Then build a collection of habits you want to have,
+      <br />
+      and see their actual frequency in a calendar.
+    </p>
+    <section
+      className="log-in"
+    >
+      <form
+        className="LoginForm"
+        onSubmit={[Function]}
+      >
+        <div
+          role="alert"
+        />
+        <div
+          className="user_name"
+        >
+          <label
+            htmlFor="LoginForm__user_name"
+          >
+            User name:
+          </label>
+          <input
+            className="Input "
+            id="LoginForm__user_name"
+            name="user_name"
+            required={true}
+          />
+        </div>
+        <div
+          className="password"
+        >
+          <label
+            htmlFor="LoginForm__password"
+          >
+            Password:
+          </label>
+          <input
+            className="Input "
+            id="LoginForm__password"
+            name="password"
+            required={true}
+            type="password"
+          />
+        </div>
+        <button
+          className="Button "
+          type="submit"
+        >
+          Login
+        </button>
+      </form>
+    </section>
+  </section>
+</section>
+`;

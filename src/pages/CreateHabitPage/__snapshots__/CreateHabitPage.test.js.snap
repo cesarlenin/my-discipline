@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CreateHabitPage /> renders this UI as expected 1`] = `
+<section>
+  <header>
+    <h1>
+      Create Habit
+    </h1>
+  </header>
+  <div
+    className="back"
+  >
+    <button
+      onClick={[Function]}
+    >
+      Go Back
+    </button>
+  </div>
+  <section
+    className="createHabit"
+  >
+    <form
+      className="habit-form"
+      onSubmit={[Function]}
+    >
+      <label
+        htmlFor="name"
+      >
+        Name:
+      </label>
+      <input
+        id="name"
+        name="name"
+        onChange={[Function]}
+        placeholder="read a book"
+        type="text"
+      />
+      <label
+        htmlFor="description"
+      >
+        Description:
+      </label>
+      <input
+        id="description"
+        name="description"
+        onChange={[Function]}
+        placeholder="description"
+        type="text"
+      />
+      <label
+        htmlFor="Goal"
+      >
+        Set a Goal, how many times a week?
+      </label>
+      <input
+        id="Goal"
+        max="7"
+        min="1"
+        name="Goal"
+        onChange={[Function]}
+        type="number"
+      />
+      <button
+        disabled="Name is required"
+        type="submit"
+        value="Submit"
+      >
+        Submit
+      </button>
+    </form>
+  </section>
+</section>
+`;

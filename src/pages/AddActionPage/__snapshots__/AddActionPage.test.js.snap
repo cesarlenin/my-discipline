@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AddActionPage /> renders this UI as expected 1`] = `
+<section>
+  <header
+    role="banner"
+  >
+    <h1>
+      Add action
+    </h1>
+  </header>
+  <div
+    className="back"
+  >
+    <button
+      onClick={[Function]}
+    >
+      Go Back
+    </button>
+  </div>
+  <section>
+    <form
+      className="add-action-form"
+      onSubmit={[Function]}
+    >
+      <label
+        htmlFor="date"
+      >
+        what day did you complete your habit?
+      </label>
+      <br />
+      <input
+        id="date"
+        name="date"
+        onChange={[Function]}
+        type="date"
+      />
+      <br />
+      <button
+        disabled="date is required"
+        type="submit"
+        value="Submit"
+      >
+        Submit
+      </button>
+    </form>
+  </section>
+</section>
+`;
