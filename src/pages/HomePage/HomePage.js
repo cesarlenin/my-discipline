@@ -24,7 +24,6 @@ export class HomePage extends Component {
 
 
   render() {
-    console.log(this.context.habits)
     return (
     <section>
       <header>
