@@ -29,8 +29,8 @@ export class EditHabitForm extends Component {
     this.context.clearError()
     let editHabit= this.context.editHabit;
     HabitsApiService.editHabit(this.state.name.value, this.state.description.value, this.state.goal.value,this.props.match.params.habitId)
-    .then(data=>editHabit(data))
-    .catch(error=>this.context.setError(error))
+    .then((data)=>editHabit(data))
+    .catch((error)=>this.context.setError(error))
   }
 
   validateName() {

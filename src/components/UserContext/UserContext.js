@@ -46,7 +46,6 @@ export class UserContextProvider extends Component {
     }
 
     setError = error => {
-        console.error(error)
         this.setState({
           error: error
         })
@@ -60,7 +59,6 @@ export class UserContextProvider extends Component {
   }
 
   addHabit = habits => {
-    console.log(habits);
     this.setHabits([
       ...this.state.habits,
       habits
@@ -106,6 +104,7 @@ export class UserContextProvider extends Component {
         removeHabit:this.removeHabit,
         editHabit:this.editHabit,
         addHabit:this.addHabit,
+        addAction:this.addAction,
       }
       return (
         <UserContext.Provider value={value}>

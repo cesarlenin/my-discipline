@@ -19,8 +19,8 @@ export class ActionForm extends Component {
   handleSubmit = e => {
     this.context.clearError()
     HabitsApiService.postAction(this.state.date.value, this.props.match.params.habitId)
-    .then(this.context.addAction)
-    .catch(this.context.setError)
+    .then((res)=>this.context.addAction(res))
+    .catch((error)=>this.context.setError(error))
   }
 
   validateDate() {
