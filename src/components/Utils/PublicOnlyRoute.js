@@ -1,18 +1,17 @@
-import React from 'react'
-import { Route, Redirect } from 'react-router-dom'
-// import TokenService from '../../services/token-service'
-import UserContext from '../UserContext/UserContext'
+import React from 'react';
+import { Route, Redirect } from 'react-router-dom';
+import UserContext from '../UserContext/UserContext';
 
 export default function PublicOnlyRoute({ component, ...props }) {
   const Component = component
   return (
     <Route
       {...props}
-      render={componentProps => (
+      render = {componentProps => (
         <UserContext.Consumer>
            {context=>
             context.authToken
-            ? <Redirect to={'/Home'} />
+            ? <Redirect to = {'/Home'} />
           : <Component {...componentProps} />
         }
         </UserContext.Consumer>   

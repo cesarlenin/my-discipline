@@ -1,21 +1,22 @@
-import React, { Component } from 'react'
-import './BackButton.css'
+import React, { Component } from 'react';
+import './BackButton.css';
 
 export class BackButton extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.goBack = this.goBack.bind(this);
- }
- goBack(){
-  this.props.history.goBack();
-}
+  }
+  goBack() {
+    this.props.history.goBack();
+  }
   render() {
-    return ( 
-    <div className= 'back'>
-    <button onClick={this.goBack}>Go Back</button>
-    </div>
+    return ( <div className = 'back' >
+      <button onClick = {this.goBack}>
+         Go Back 
+      </button>
+      </div>
     )
   }
 }
 
-export default BackButton
+export default BackButton;

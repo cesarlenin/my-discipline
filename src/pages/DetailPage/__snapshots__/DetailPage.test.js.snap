@@ -6,10 +6,12 @@ exports[`<DetailPages /> renders this UI as expected 1`] = `
     className="hDetails"
   >
     <h1>
-      Habit Name:
+       Habit Name: 
     </h1>
     <h2>
+       
       Read a book
+       
     </h2>
   </header>
   <div
@@ -27,27 +29,7 @@ exports[`<DetailPages /> renders this UI as expected 1`] = `
     <div
       className="weekCalendar"
     >
-      <div
-        className="day"
-      >
-        Thu
-        <br />
-        21
-      </div>
-      <div
-        className="day"
-      >
-        Fri
-        <br />
-        22
-      </div>
-      <div
-        className="day"
-      >
-        Sat
-        <br />
-        23
-      </div>
+       
       <div
         className="day"
       >
@@ -76,35 +58,59 @@ exports[`<DetailPages /> renders this UI as expected 1`] = `
         <br />
         27
       </div>
+      <div
+        className="day"
+      >
+        Thu
+        <br />
+        28
+      </div>
+      <div
+        className="day"
+      >
+        Fri
+        <br />
+        29
+      </div>
+      <div
+        className="day"
+      >
+        Sat
+        <br />
+        30
+      </div>
     </div>
   </section>
   <section
     className="detail"
   >
     <h3>
-      Description:
+       Description: 
     </h3>
     <p>
+       
       Important
+       
     </p>
   </section>
   <section
     className="detail"
   >
     <h3>
-      Goal:
+       Goal: 
     </h3>
     <p>
+       
       7
-       times a week
+      times a week 
     </p>
     <br />
     <span
       className="result red"
     >
-      Keep working on it,
+       Keep working on it,
       <br />
-       you can do it!
+       you can do it! 
     </span>
   </section>
   <section

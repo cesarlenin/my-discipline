@@ -4,7 +4,7 @@ exports[`<EditHabitPage /> renders this UI as expected 1`] = `
 <section>
   <header>
     <h1>
-      Edit Habit
+       Edit Habit 
     </h1>
   </header>
   <div
@@ -26,8 +26,9 @@ exports[`<EditHabitPage /> renders this UI as expected 1`] = `
       <label
         htmlFor="name"
       >
-        Name:
+         Name: 
       </label>
+       
       <input
         defaultValue="Read a book"
         id="name"
@@ -38,8 +39,9 @@ exports[`<EditHabitPage /> renders this UI as expected 1`] = `
       <label
         htmlFor="description"
       >
-        Description:
+         Description: 
       </label>
+       
       <input
         defaultValue="Important"
         id="description"
@@ -50,8 +52,9 @@ exports[`<EditHabitPage /> renders this UI as expected 1`] = `
       <label
         htmlFor="Goal"
       >
-        Goal:
+         Goal: 
       </label>
+       
       <input
         defaultValue={7}
         id="Goal"

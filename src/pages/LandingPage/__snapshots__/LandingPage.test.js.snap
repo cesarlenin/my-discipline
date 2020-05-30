@@ -10,11 +10,11 @@ exports[`<LandingPage /> renders this UI as expected 1`] = `
     <h1
       className="smallerH1"
     >
-      Be Organized
+       Be Organized
       <br />
-      Be Disciplined
+      Be Disciplined 
       <br />
-      Be A Better You
+      Be A Better You 
     </h1>
   </header>
   <section
@@ -23,7 +23,7 @@ exports[`<LandingPage /> renders this UI as expected 1`] = `
     <p
       className="appInfo"
     >
-      My Discipline helps you keep track of your habits.
+       My Discipline helps you keep track of your habits.
       <br />
       Start by setting goals you want to meet.
       <br />

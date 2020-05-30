@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import UserContext from '../UserContext/UserContext';
 import ValidationError from '../ValidationError/ValidationError';
-import HabitsApiService from '../../services/my-discipline-api-service'
-import './ActionForm.css'
+import HabitsApiService from '../../services/my-discipline-api-service';
+import './ActionForm.css';
 
 export class ActionForm extends Component {
   static contextType = UserContext;
@@ -41,15 +41,15 @@ export class ActionForm extends Component {
           this.props.history.push('/Home');
         }}>
           {this.state.date.touched && <ValidationError message={dateError} />}
-					<label htmlFor="date">what day did you complete your habit?</label>
+					<label htmlFor='date'>what day did you complete your habit?</label>
           <br/>
-          <input type="date" name='date' id='date' 
+          <input type='date' name='date' id='date' 
           onChange={(e) => this.updateDate(e.target.value)}
           />
           <br/>
 
-          <button type="submit" value="Submit" 
-          disabled={ this.validateDate()}
+          <button type='submit' value='Submit'
+          disabled={this.validateDate()}
           >
           Submit
           </button>

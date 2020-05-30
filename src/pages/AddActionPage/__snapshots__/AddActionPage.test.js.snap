@@ -6,7 +6,7 @@ exports[`<AddActionPage /> renders this UI as expected 1`] = `
     role="banner"
   >
     <h1>
-      Add action
+       Add action 
     </h1>
   </header>
   <div

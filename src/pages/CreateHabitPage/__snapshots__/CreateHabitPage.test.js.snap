@@ -4,7 +4,7 @@ exports[`<CreateHabitPage /> renders this UI as expected 1`] = `
 <section>
   <header>
     <h1>
-      Create Habit
+       Create Habit 
     </h1>
   </header>
   <div
@@ -26,7 +26,7 @@ exports[`<CreateHabitPage /> renders this UI as expected 1`] = `
       <label
         htmlFor="name"
       >
-        Name:
+         Name: 
       </label>
       <input
         id="name"
@@ -38,7 +38,7 @@ exports[`<CreateHabitPage /> renders this UI as expected 1`] = `
       <label
         htmlFor="description"
       >
-        Description:
+         Description: 
       </label>
       <input
         id="description"
@@ -50,8 +50,9 @@ exports[`<CreateHabitPage /> renders this UI as expected 1`] = `
       <label
         htmlFor="Goal"
       >
-        Set a Goal, how many times a week?
+         Set a Goal, how many times a week ? 
       </label>
+       
       <input
         id="Goal"
         max="7"

@@ -4,7 +4,7 @@ exports[`<HomePage /> renders this UI as expected 1`] = `
 <section>
   <header>
     <h1>
-      My Habits
+       My Habits 
     </h1>
   </header>
   <section
