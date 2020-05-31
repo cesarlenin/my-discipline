@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './BackButton.css';
 
 export class BackButton extends Component {
@@ -10,11 +11,12 @@ export class BackButton extends Component {
     this.props.history.goBack();
   }
   render() {
-    return ( <div className = 'back' >
+    return ( 
+    <div className = 'back' >
       <button onClick = {this.goBack}>
          Go Back 
       </button>
-      </div>
+    </div>
     )
   }
 }
