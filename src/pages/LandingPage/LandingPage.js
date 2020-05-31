@@ -14,7 +14,10 @@ export class LandingPage extends Component {
           <p className = 'appInfo' > My Discipline helps you keep track of your habits.< br />
           Start by setting goals you want to meet.< br />
           Then build a collection of habits you want to have,< br />
-          and see their actual frequency in a calendar. 
+          and see their actual frequency in a calendar.< br />
+          <a href="https://raw.githubusercontent.com/cesarlenin/my-discipline/master/users" target="_blank">
+            Click here for list of users
+            </a> 
           </p> 
           <section className = 'log-in' >
             <LogInform />
