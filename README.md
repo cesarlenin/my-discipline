@@ -9,7 +9,7 @@ backend:[https://git.heroku.com/my-discipline.git/](https://git.heroku.com/my-di
 Currently the API supports GET, POST, DELETE, and PATCH endpoints.
 
 - Protected Endpoints<br />
-    +Login: POST (https://my-discipline.herokuapp.com/auth/login)<br />
+    + Login: POST (https://my-discipline.herokuapp.com/auth/login)<br />
     -GET Habits: GET (https://my-discipline.herokuapp.com/api/habits)<br />
     -GET Habit: GET (https://my-discipline.herokuapp.com/api/habits/<habit_id>)<br />
     -POST Habits: POST (https://my-discipline.herokuapp.com/api/habits/)<br />
