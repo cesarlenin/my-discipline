@@ -58,7 +58,7 @@ export class DetailPage extends Component {
         </section> 
         <section className = 'detail' >
           <h3 > Goal: </h3> 
-          <p > {shownHabit.goal}times a week </p> 
+          <p > {shownHabit.goal} times a week </p> 
           <br/> 
           {(progress >= shownHabit.goal) ?
           <span className = 'result blue' > Congratulations! <br/> You 're doing great.</span>: 
