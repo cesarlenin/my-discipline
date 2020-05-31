@@ -30,6 +30,13 @@ exports[`<LandingPage /> renders this UI as expected 1`] = `
       Then build a collection of habits you want to have,
       <br />
       and see their actual frequency in a calendar.
+      <br />
+      <a
+        href="https://raw.githubusercontent.com/cesarlenin/my-discipline/master/users"
+        target="_blank"
+      >
+        Click here for list of users
+      </a>
     </p>
     <section
       className="log-in"

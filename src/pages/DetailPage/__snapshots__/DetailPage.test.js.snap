@@ -33,13 +33,6 @@ exports[`<DetailPages /> renders this UI as expected 1`] = `
       <div
         className="day"
       >
-        Sun
-        <br />
-        24
-      </div>
-      <div
-        className="day"
-      >
         Mon
         <br />
         25
@@ -79,6 +72,13 @@ exports[`<DetailPages /> renders this UI as expected 1`] = `
         <br />
         30
       </div>
+      <div
+        className="day"
+      >
+        Sun
+        <br />
+        31
+      </div>
     </div>
   </section>
   <section
@@ -102,7 +102,7 @@ exports[`<DetailPages /> renders this UI as expected 1`] = `
     <p>
        
       7
-      times a week 
+       times a week 
     </p>
     <br />
     <span
