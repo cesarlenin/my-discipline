@@ -9,13 +9,13 @@ backend:[https://git.heroku.com/my-discipline.git/](https://git.heroku.com/my-di
 Currently the API supports GET, POST, DELETE, and PATCH endpoints.
 
 - Protected Endpoints
-    -Login: POST (https://my-discipline.herokuapp.com/auth/login)
-    -GET Habits: GET (https://my-discipline.herokuapp.com/api/habits)
-    -GET Habit: GET (https://my-discipline.herokuapp.com/api/habits/<habit_id>)
-    -POST Habits: POST (https://my-discipline.herokuapp.com/api/habits/)
-    -DELETE Habit:DELETE (https://my-discipline.herokuapp.com/api/habits/<habit_id>)
-    -PATCH Habit:PATCH (https://my-discipline.herokuapp.com/api/habits/<habit_id>)
-    -GET Actions: GET (https://my-discipline.herokuapp.com/actions)
+    -Login: POST (https://my-discipline.herokuapp.com/auth/login)<br />
+    -GET Habits: GET (https://my-discipline.herokuapp.com/api/habits)<br />
+    -GET Habit: GET (https://my-discipline.herokuapp.com/api/habits/<habit_id>)<br />
+    -POST Habits: POST (https://my-discipline.herokuapp.com/api/habits/)<br />
+    -DELETE Habit:DELETE (https://my-discipline.herokuapp.com/api/habits/<habit_id>)<br />
+    -PATCH Habit:PATCH (https://my-discipline.herokuapp.com/api/habits/<habit_id>)<br />
+    -GET Actions: GET (https://my-discipline.herokuapp.com/actions)<br />
     -POST Action: POST (https://my-discipline.herokuapp.com/api/actions/)
 
 ## Screen Shots
