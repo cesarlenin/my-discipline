@@ -27,7 +27,9 @@ Currently the API supports GET, POST, DELETE, and PATCH endpoints.
 ![add](images/add.png)<br />
 
 ### Summary
-
+- My Discipline was created to be a simple way to keep track and organize all of your habits.  
+The user starts off by setting goals they want to meet. Then generating a collection of habits they want to have,
+and quickly seeing their consistency in a calendar every time they log in.
 
 ## Technologies
   - React

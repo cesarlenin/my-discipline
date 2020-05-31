@@ -17,7 +17,7 @@ export class LandingPage extends Component {
           and see their actual frequency in a calendar.< br />
           <a href="https://raw.githubusercontent.com/cesarlenin/my-discipline/master/users" target="_blank">
             Click here for list of users
-            </a> 
+          </a> 
           </p> 
           <section className = 'log-in' >
             <LogInform />
