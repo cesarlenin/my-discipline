@@ -15,6 +15,7 @@
     background-color: #4CB944 ;
     text-decoration: none;
     margin: 20px;
+    text-align: center;
   }
   .back button:hover{
     background-color: rgb(54, 133, 48);
