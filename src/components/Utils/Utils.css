@@ -1,11 +1,5 @@
 
-.Hyph {
-  margin-right: 5px;
-  margin-left: 5px;
-}
-
-.Input,
-.Textarea {
+.Input {
   border: 1px solid #ddd;
   display: block;
   font-size: 1.1em;
@@ -17,14 +11,6 @@
   margin-right: auto;
 }
 
-.Input::placeholder,
-.Textarea::placeholder {
-  color: #ccc;
-}
-
-.Textarea {
-  resize: vertical;
-}
 
 .Button {
   order: 1px solid #aaa;
@@ -41,11 +27,4 @@
   font-weight: bold;
 }
 
-.Section {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.Section--list {
-  margin-left: 10px;
-  margin-right: 10px;
-}
+
