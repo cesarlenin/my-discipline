@@ -3,13 +3,15 @@ import { Button, Input } from '../Utils/Utils';
 import TokenService from '../../services/token-service';
 import AuthApiService from '../../services/auth-api-service';
 import UserContext from '../UserContext/UserContext';
+import { Link } from 'react-router-dom';
 import './LogInform.css';
 
 export default class LoginForm extends Component {
   static contextType = UserContext;
 
   static defaultProps = {
-    onLoginSuccess: () => {}
+    onLoginSuccess: () => {
+    }
   }
 
   state = {
@@ -50,7 +52,10 @@ export default class LoginForm extends Component {
     } = this.state
     return ( 
       <form className = 'LoginForm'
-        onSubmit = { this.handleSubmitJwtAuth} 
+        onSubmit = { (e) => {
+          this.handleSubmitJwtAuth(e);
+          this.props.history.push('/Home');
+          }}
       >
         
         <div role = 'alert' > 

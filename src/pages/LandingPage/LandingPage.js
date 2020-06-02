@@ -20,7 +20,7 @@ export class LandingPage extends Component {
           </a> 
           </p> 
           <section className = 'log-in' >
-            <LogInform />
+            <LogInform {...this.props}/>
           </section> 
         </section> 
       </section>

@@ -41,7 +41,7 @@ export class Nav extends Component {
           <h2 > MY DISCIPLINE </h2>
         </NavLink> 
         <section className = 'navlinks' > {
-          this.context.authToken ?
+          TokenService.hasAuthToken() ?
           this.renderLogoutLink() :
           this.renderLoginLink()
         } 

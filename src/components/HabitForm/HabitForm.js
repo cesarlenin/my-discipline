@@ -25,6 +25,7 @@ export class HabitForm extends Component {
   }
 
   handleSubmit = e => {
+    e.preventDefault();
     this.context.clearError();
     HabitsApiService.postHabit(this.state.name.value, this.state.description.value, this.state.goal.value)
       .then((res) => this.context.addHabit(res))
@@ -88,8 +89,8 @@ export class HabitForm extends Component {
       const goalError = this.validateGoal();
       return ( 
       <form className = 'habit-form'
-        onSubmit = { () => {
-          this.handleSubmit();
+        onSubmit = { (e) => {
+          this.handleSubmit(e);
           this.props.history.push('/Home');
         }} 
       >

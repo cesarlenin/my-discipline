@@ -3,13 +3,14 @@ import { Link } from 'react-router-dom';
 import HabitList from '../../components/HabitList/HabitList';
 import UserContext from '../../components/UserContext/UserContext';
 import HabitsApiService from '../../services/my-discipline-api-service';
+import TokenService from '../../services/token-service';
 import './HomePage.css';
 
 export class HomePage extends Component {
   static contextType = UserContext;
 
   componentDidMount() {
-    if (this.context.authToken) {
+    if (TokenService.hasAuthToken()) {
       this.context.clearError();
       HabitsApiService.getHabits()
         .then(data => this.context.setHabits(data))
