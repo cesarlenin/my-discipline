@@ -3,7 +3,6 @@ import { Button, Input } from '../Utils/Utils';
 import TokenService from '../../services/token-service';
 import AuthApiService from '../../services/auth-api-service';
 import UserContext from '../UserContext/UserContext';
-import { Link } from 'react-router-dom';
 import './LogInform.css';
 
 export default class LoginForm extends Component {
@@ -38,6 +37,7 @@ export default class LoginForm extends Component {
         TokenService.saveAuthToken(res.authToken)
         this.context.setAuthToken(res.authToken)
         this.props.onLoginSuccess()
+        this.props.history.push('/Home');
       })
       .catch(res => {
         this.setState({
@@ -54,7 +54,6 @@ export default class LoginForm extends Component {
       <form className = 'LoginForm'
         onSubmit = { (e) => {
           this.handleSubmitJwtAuth(e);
-          this.props.history.push('/Home');
           }}
       >
         

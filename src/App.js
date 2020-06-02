@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Switch, BrowserRouter} from 'react-router-dom';
+import {Switch, Route} from 'react-router-dom';
 import NotFound from './pages/NotFound/NotFound';
 import LandingPage from './pages/LandingPage/LandingPage';
 import HomePage from './pages/HomePage/HomePage';
@@ -10,14 +10,12 @@ import DetailPage from './pages/DetailPage/DetailPage';
 import Nav from './components/Nav/Nav';
 import PrivateRoute from './components/Utils/PrivateRoute';
 import PublicOnlyRoute from './components/Utils/PublicOnlyRoute';
-import {UserContextProvider} from './components/UserContext/UserContext';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <UserContextProvider>
-      <BrowserRouter>
+      <div>
       <Nav/>
       <main className = 'App__main'>
         <Switch>
@@ -27,12 +25,11 @@ class App extends Component {
           <PrivateRoute exact path = '/AddAction/:habitId' component = {AddActionPage} />
           <PrivateRoute exact path = '/EditHabit/:habitId' component = {EditHabitPage} />
           <PrivateRoute exact path = '/Detail/:habitId' component = {DetailPage}/>
-          <PublicOnlyRoute component = {NotFound} />
+          <Route component = {NotFound} />
         </Switch>
       </main>
       <footer className = 'footer'>@2020 Cesar Morales.</footer>
-      </BrowserRouter>
-      </UserContextProvider>
+      </div>
     )
   }
 }
