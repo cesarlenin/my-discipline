@@ -36,7 +36,8 @@ export class ActionForm extends Component {
     const dateError = this.validateDate();
     return (
         <form className='add-action-form'
-        onSubmit={() => {
+        onSubmit={(e) => {
+          e.preventDefault();
           this.handleSubmit();
           this.props.history.push('/Home');
         }}>

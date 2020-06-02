@@ -89,7 +89,8 @@ export class EditHabitForm extends Component {
       const goalError = this.validateGoal();
       return ( 
         <form className = 'edit-habit-form'
-          onSubmit = {() => {
+          onSubmit = {(e) => {
+              e.preventDefault();
               this.handleSubmit();
               this.props.history.push('/Home');
             }
