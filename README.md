@@ -3,7 +3,6 @@ My Discipline
 
 ## Links
 live site: [https://my-discipline.now.sh](https://my-discipline.now.sh)<br />
-backend:[https://my-discipline.herokuapp.com/](https://my-discipline.herokuapp.com/)
 backend:[https://my-discipline.herokuapp.com/](https://my-discipline.herokuapp.com/)<br />
 Link to Server repo:[https://github.com/cesarlenin/my-discipline-api](https://github.com/cesarlenin/my-discipline-api)
 
